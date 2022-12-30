@@ -6,7 +6,9 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
+        @include("auth.css")
+        {{-- <link rel="stylesheet" href='public/css/stylsheet.css'> --}}
+         {{-- <link rel="stylesheet" href={{ asset('public/css/stylsheet.css')}}> --}}
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
 
@@ -16,11 +18,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         {{-- <link rel="stylesheet" href={{ asset('css/signIn.css')}}> --}}
         {{-- <link rel="stylesheet" href={{ asset('css/signup.css')}}> --}}
-        {{-- @include("auth.css")--}}
+
         {{-- @include("auth.registerCss")  --}}
 
         {{-- @stack('styles') --}}
-        <link rel="stylesheet" href={{ asset('css/stylsheet.css')}}>
+        {{-- <link rel="stylesheet" href={{ asset('css/stylsheet.css')}}> --}}
 
     </head>
     <body class="font-sans text-gray-900 antialiased">

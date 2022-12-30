@@ -2,7 +2,7 @@
 
 
 @section("content")
-{{-- <div style="margin: 10em;"> --}}
+<div style="margin: 30em;">
 <div class="signup__container">
     <div class="container__child signup__thumbnail">
 
@@ -49,9 +49,9 @@
       </form>
     </div>
   </div>
-{{-- </div> --}}
+</div>
 
 @endsection
-@push('styles')
+{{-- @push('styles')
     <link rel="stylesheet" href={{ asset('css/signup.css')}}>
-@endpush
+@endpush --}}

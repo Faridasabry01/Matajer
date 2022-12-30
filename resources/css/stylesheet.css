@@ -19,8 +19,8 @@ right:40px;
 }
 /* cards */
 .cards{
-     margin-bottom: 20px; 
-     margin-top: 200px; 
+     margin-bottom: 20px;
+     margin-top: 200px;
 }
 /* end */
 /*********************************************************/
@@ -31,25 +31,25 @@ right:40px;
     top: 140px;
     left :100px;
  }
- 
+
  .pos_cosmetics{
- 
- 
+
+
      position: absolute;
     top: 90px;
     left :100px;
  }
- 
+
  .pos_haircare{
- 
- 
+
+
      position: absolute;
     top: 90px;
     left :100px;
  }
  .pos_medicine{
- 
- 
+
+
      position: absolute;
     top: 90px;
     left :100px;
@@ -60,7 +60,7 @@ right:40px;
      background-color: rgba(104, 202, 109, 0.397);
  }
  .icon3{
- 
+
      position: absolute;
      width: 50px;
      height: 50px;
@@ -69,18 +69,18 @@ right:40px;
      right: 150px;
      padding: 4px;
      }
- 
+
  .img2{
      padding-left: 20px;
  margin-left: 150px;
      width:30%;
      height: fit-content;
-     
+
  }
- 
+
  .text1{
      margin-left:150px ;
- 
+
      padding: 15px;
    width:20%;
    font-size: 10;
@@ -89,15 +89,15 @@ right:40px;
       justify-content: center;
       flex-direction: column;
  }
- 
+
  .text{
      width:30%;
      text-align:left;
      padding-left: 15px;
      padding-top: 10px;
  }
- 
- 
+
+
  .flex{
      display: flex;
      height: 160px;
@@ -106,7 +106,7 @@ right:40px;
      flex-wrap: nowrap;
       /*border-bottom: 2px solid rgba(43, 42, 42, 0.171);*/
  }
- 
+
  .bt{
      position: absolute;
      color:rgb(90, 87, 87);
@@ -120,11 +120,11 @@ right:40px;
      border-top-left-radius: 10px ;
      border-top-right-radius: 10px;
      border-color: rgb(209, 191, 191) ;
-      
+
  }
  button:hover{
      background-color: rgba(136, 133, 133, 0.473);
- 
+
  }
  .endSection{
     /* display: inline-block;*/
@@ -134,7 +134,7 @@ right:40px;
  /*margin-block-start: 60px;*/
  position:absolute ;
  bottom: 0;
- 
+
  color:rgb(9, 12, 12);
  border-top-left-radius:20px ;
  border-top-right-radius: 20px;
@@ -146,7 +146,7 @@ right:40px;
 .cardsPos{
 
     position: relative;
-   
+
 }
 #footer {
     position: relative;
@@ -171,7 +171,7 @@ right:40px;
     width: 100%;
 }
  /* el hagat el etzawedet 3ashan el foooter (end)*/
- 
+
  body{
     background: -webkit-linear-gradient(left, rgb(192, 190, 190), #77917a8e);
 }
@@ -184,33 +184,33 @@ right:40px;
  /* products */
  .productPicDiv{
     height: 400px;
-    width:475px; 
-    /* border-style: solid; 
+    width:475px;
+    /* border-style: solid;
     border-color: rgb(214, 203, 203); */
      margin-left: 300px;
-      margin-top: 90px; 
+      margin-top: 90px;
       margin-right: 20px;
        display:inline-block;
 
  }
  .productImg{
     height:100%;
-    width:450; 
+    width:450;
     padding-top: 10px;
  }
  .productInfo{
     display: inline-block;
-    width: fit-content; 
+    width: fit-content;
     /*border-style: solid;
      border-color: rgb(214, 203, 203);  */
     margin-left: 100px;
     height: 450px;
-    width:475px; 
-    margin-top: 50px; 
+    width:475px;
+    margin-top: 50px;
     flex: auto;
     max-width: 600px;
-    
-    
+
+
  }
 
  .wishlistDIV{
@@ -233,7 +233,7 @@ right:40px;
  .addToCart{
     border-radius: 3cm;
     background-color: #e0f3ddf6;
-    
+
  }
  .addToCart:hover{
     background-color: rgb(241, 164, 241);
@@ -251,7 +251,7 @@ right:40px;
  .heading{
     display:table;
     width: 66%;
-    
+
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -288,7 +288,7 @@ right:40px;
     text-align:center;
     padding-bottom:25px;
   }
-  
+
   .footer-basic .social > a {
     font-size:24px;
     width:40px;
@@ -302,11 +302,11 @@ right:40px;
     color:inherit;
     opacity:0.75;
   }
-  
+
   .footer-basic .social > a:hover {
     opacity:0.9;
   }
-  
+
   /* .footer-basic .copyright {
     margin-top:15px;
     text-align:center;
@@ -405,7 +405,7 @@ right:40px;
   .thumbnail__links a {
     font-size: 1rem;
     color: #fff;
-    
+
   }
   .signup__form {
     padding: 2.5rem;
@@ -422,7 +422,7 @@ right:40px;
     border-right: 0;
     border-left: 0;
     border-radius: 0;
-  
+
   }
   [type="text"] {
     color: #111;
@@ -438,14 +438,14 @@ right:40px;
     color: #fff;
     background: #111;
     border-radius: remy(35px);
-    
+
   }
   .signup__link {
     font-size: 0.8rem;
     font-weight: 600;
     text-decoration: underline;
     color: #999;
-    
+
   }
   #matajer{
     position: absolute;
@@ -491,7 +491,7 @@ body{
     #matajer{
         position: absolute;
         left: 40px;
-    } 
+    }
    .inputTxt{
         width: 400px;
     }
@@ -499,7 +499,7 @@ body{
         position: relative;
         top: 200px;
         width: 100%;
-    
+
     }
     body{
         background: -webkit-linear-gradient(left, rgb(192, 190, 190), #385e3d8e);
@@ -507,20 +507,20 @@ body{
 
 /* =========================================== */
   /* WL stylesheet */
-  
+
   @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
   body {
       background-color: #eee;
       font-family: 'Calibri', sans-serif !important;
   }
-  
+
   .mt-100{
      margin-top:100px;
-  
+
   }
-  
-  
+
+
   .card {
       margin-bottom: 30px;
       border: 0;
@@ -531,7 +531,7 @@ body{
       -webkit-box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
       box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
   }
-  
+
   .card .card-header {
       background-color: #fff;
       border-bottom: none;
@@ -540,18 +540,18 @@ body{
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
   }
-  
+
   .card-header:first-child {
       border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
   }
-  
-  
-  
+
+
+
   .card .card-body {
       padding: 30px;
       background-color: transparent;
   }
-  
+
   .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
       background-color: #1b485b!important;
       border-color: #c3c5cb!important;
@@ -640,12 +640,12 @@ body{
         color: #414d58;
         cursor: pointer;
     }
-    
-    
+
+
     .profile-head .nav-tabs{
         margin-bottom:5%;
     }
-    
+
     .profile-head .nav-tabs .nav-link.active{
         border: none;
         border-bottom:2px solid rgb(49, 126, 130);
@@ -722,7 +722,4 @@ body {
     background-color: #1b485b!important;
     border-color: #c3c5cb!important;
 }
-
-
-
 
