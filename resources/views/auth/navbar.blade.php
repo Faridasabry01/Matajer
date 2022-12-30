@@ -28,12 +28,23 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="Matajer.html">Home</a>
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="cart.html">My Cart</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="joinUs.html">Join Us </a>
-          </li>
+          </li> --}}
+          {{-- <li class="nav-item"> --}}
+            {{-- <ol class="login-nav"> --}}
+            @if (Route::currentRouteName()=="login")
+            <li>
+                <a class="nav-link active" aria-current="page" href="{{ route("register") }}">Register</a>
+            </li>
+            @else
+            <li>
+                <a class="nav-link active" aria-current="page" href="{{ route("login") }}">Login</a>
+            </li>
+            @endif
+            {{-- <a class="nav-link active" aria-current="page" href="joinUs.html">Join Us </a> --}}
+          {{-- </li> --}}
+        {{-- </ol> --}}
           <li class="nav-item">
           <div class="btn-group">
             <button type="button" class="btn btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -73,7 +84,7 @@
           </div>
 
     -->
-    <ol class="login-nav">
+    {{-- <ol class="login-nav">
 
 
         @if (Route::currentRouteName()=="login")
@@ -82,11 +93,11 @@
         <li><a class="btn btn-primary" href="{{ route("login") }}"></a></li>
 
 
-        @endif
+        @endif--}}
 
 {{-- @dd(Route::currentRouteName()) --}}
 
-    </ol>
+    {{-- </ol>  --}}
 
 
   </div>

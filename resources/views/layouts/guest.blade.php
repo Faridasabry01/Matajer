@@ -14,7 +14,13 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        @include("auth.css")
+        {{-- <link rel="stylesheet" href={{ asset('css/signIn.css')}}> --}}
+        {{-- <link rel="stylesheet" href={{ asset('css/signup.css')}}> --}}
+        {{-- @include("auth.css")--}}
+        {{-- @include("auth.registerCss")  --}}
+
+        {{-- @stack('styles') --}}
+        <link rel="stylesheet" href={{ asset('css/stylsheet.css')}}>
 
     </head>
     <body class="font-sans text-gray-900 antialiased">
@@ -29,7 +35,8 @@
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
                 {{ $slot }}
-            </div> --}}
-        </div>
+            </div>
+        </div>--}}
+        @include("auth.footer")
     </body>
 </html>

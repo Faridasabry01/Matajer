@@ -2,7 +2,7 @@
 
 
 @section("content")
-
+{{-- <div style="margin: 10em;"> --}}
 <div class="signup__container">
     <div class="container__child signup__thumbnail">
 
@@ -14,7 +14,8 @@
       <div class="signup__overlay"></div>
     </div>
     <div class="container__child signup__form">
-      <form action="#">
+        <form method="POST" action="{{ route('register') }}">
+            @csrf
         <div class="form-group">
           <label for="username">Username</label>
           <input class="form-control" type="text" name="username" id="username" placeholder="choose a Username" required />
@@ -35,7 +36,7 @@
           <label for="passwordRepeat">Repeat Password</label>
           <input class="form-control" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="********" required />
         </div>
-        <div class="m-t-lg">
+        <div class="m-t-lg"style="margin-bottom: 40 em;">
           <ul class="list-inline">
             <li>
               <input class="btn btn--form" onclick="validate()" type="submit" value="Register" />
@@ -48,5 +49,9 @@
       </form>
     </div>
   </div>
+{{-- </div> --}}
 
 @endsection
+@push('styles')
+    <link rel="stylesheet" href={{ asset('css/signup.css')}}>
+@endpush
