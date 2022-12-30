@@ -13,6 +13,8 @@
                     <div class="forms-inputs mb-4"> <span>Email</span> <input name="email" class="inputTxt" id="mail" autocomplete="off" type="text" v-model="email"  v-on:blur="emailBlured = true">
                         <div class="invalid-feedback">A valid email is required!</div>
                     </div>
+                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
+
                     <div class="forms-inputs mb-4"> <span>Password</span> <input name="password" class="inputTxt" id="passw" autocomplete="off" type="password" v-model="password"  v-on:blur="passwordBlured = true">
 
                     </div>
