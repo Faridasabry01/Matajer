@@ -17,17 +17,17 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
         <div class="form-group">
-          <label for="username">Username</label>
-          <input class="form-control" type="text" name="username" id="username" placeholder="choose a Username" required />
+          <label for="username">Name</label>
+          <input class="form-control" type="text" name="name" id="username" placeholder="choose a Username" required />
         </div>
         <div class="form-group">
           <label for="email">Email</label>
           <input class="form-control" type="text" name="email" id="email" placeholder="enter email" required />
         </div>
-        <div class="form-group">
+        {{-- <div class="form-group">
           <label for="phoneNumber">Phone Number</label>
           <input class="form-control" type="text" name="phoneNumber" id="phoneNumber" placeholder="enter Phone Number" required />
-        </div>
+        </div> --}}
         <div class="form-group">
           <label for="password">Password</label>
           <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
