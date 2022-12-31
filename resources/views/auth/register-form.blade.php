@@ -18,24 +18,34 @@
             @csrf
         <div class="form-group">
           <label for="username">Name</label>
-          <input class="form-control" type="text" name="name" id="username" placeholder="choose a Username" required />
+          <input class="form-control" type="text" value="{{old('name')}}" name="name" id="username" placeholder="choose a Username"  />
         </div>
+        <x-input-error :messages="$errors->get('name')" class="mt-2" />
+
         <div class="form-group">
           <label for="email">Email</label>
-          <input class="form-control" type="text" name="email" id="email" placeholder="enter email" required />
+          <input class="form-control" type="text" value="{{old('email')}}" name="email" id="email" placeholder="enter email"  />
         </div>
-        {{-- <div class="form-group">
+        <x-input-error :messages="$errors->get('email')" class="mt-2" />
+
+        <div class="form-group">
           <label for="phoneNumber">Phone Number</label>
-          <input class="form-control" type="text" name="phoneNumber" id="phoneNumber" placeholder="enter Phone Number" required />
-        </div> --}}
+          <input class="form-control" type="text" value="{{old('phone_number')}}" name="phone_number" id="phoneNumber" placeholder="enter Phone Number"  />
+        </div>
+        <x-input-error :messages="$errors->get('phone_number')" class="mt-2" />
+
         <div class="form-group">
           <label for="password">Password</label>
-          <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
+          <input class="form-control" type="password" value="{{old('password')}}" name="password" id="password" placeholder="********"  />
         </div>
+        <x-input-error :messages="$errors->get('password')" class="mt-2" />
+
         <div class="form-group">
           <label for="passwordRepeat">Repeat Password</label>
-          <input class="form-control" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="********" required />
+          <input class="form-control" type="password" value="{{old('password_confirmation')}}" name="password_confirmation" id="passwordRepeat" placeholder="********"  />
         </div>
+        <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+
         <div class="m-t-lg"style="margin-bottom: 40 em;">
           <ul class="list-inline">
             <li>
