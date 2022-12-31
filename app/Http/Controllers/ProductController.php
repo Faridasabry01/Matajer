@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
+use App\Models\Category;
+use App\Http\Requests\StoreCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
 
 class ProductController extends Controller
 {
@@ -47,7 +50,9 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        $categories = Category::all();
+        //$product = Product::all();
+        return view("categories.product",["categories"=>$categories,"product"=>$product]);
     }
 
     /**

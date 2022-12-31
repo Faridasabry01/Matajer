@@ -24,7 +24,7 @@
     <div class="card h-100" style="width: 350px; height: 200px; ">
       <img src="{{$product->image}}" class="card-img-top" alt="ANASTASIA BEVERLY HILLS Waterproof Creme Liner Jet Black"style="height: 350px;"> <!--edit-->
       <div class="card-body">
-          <a href="cosmetics_ANASTASIACremeLiner.html" style="font-size: 16; color:black">{{$product->name}}</a>
+          <a href="{{route("product.show",$product->id)}}" style="font-size: 16; color:black">{{$product->name}}</a>
            <p class="card-text">price: {{$product->price}} EGP</p>
       </div>
 

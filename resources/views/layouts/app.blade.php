@@ -18,6 +18,7 @@
     <body class="font-sans antialiased">
         <div class="">
             @include("auth.navbar")
+
             {{-- @include('layouts.navigation') --}}
 
             <!-- Page Heading -->
