@@ -34,6 +34,7 @@
             <main>
                @yield("content")
             </main>
+            @include('auth.footer')
         </div>
         <script src="./js/jquery-1.9.1.js"></script>
         <!--script rakam 1000-->

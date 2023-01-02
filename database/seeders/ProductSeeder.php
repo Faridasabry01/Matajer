@@ -35,7 +35,7 @@ class ProductSeeder extends Seeder
             'price'=>600,
             'quantity'=>20,
             'brand'=>"Olaplex",
-            'image'=> asset("/storage/haircare/EverPureArganOil.jpg"),
+            'image'=> asset("/storage/haircare/olaplexNo7.jpg"),
             'size'=>"30 Ml",
             'expires_at'=> now(),
             'desc'=>"Repairs damaged and compromised hair.Strengthens and protects hair structure.Restores healthy appearance and texture.
@@ -44,7 +44,7 @@ class ProductSeeder extends Seeder
             "category_id"=> 2
         ]);
 
-       
+
 
         Product::create([
             'name'=>"Lilium Argan Oil Hair Care Set",
@@ -68,7 +68,7 @@ class ProductSeeder extends Seeder
             'size'=>"300 Ml",
             'expires_at'=> now(),
             'desc'=>"Shampoo Brush with Soft & Flexible Silicone Bristles for Hair Care and Head Relaxation.Ergonomic Scalp Scrubber/Exfoliator for Dandruff Removal and Hair Growth.
-            In daily hair washing, it thoroughly removes the flakes and build-up from the scalp and spreads hair care products deeply, 
+            In daily hair washing, it thoroughly removes the flakes and build-up from the scalp and spreads hair care products deeply,
             leaving your hair cleaner and fresher.",
             "category_id"=> 2
         ]);
