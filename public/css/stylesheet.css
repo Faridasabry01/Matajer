@@ -396,37 +396,6 @@ body{
 }
 
   /* =========================================== */
-  /* SIGNin */
-  body{background: #000}
-.card{border: none;height: 320px}
-.forms-inputs{position: relative}
-.forms-inputs span{position: absolute;
-    top:-18px;
-    left: 10px;
-    background-color: #fff;
-    padding: 5px 10px;font-size: 15px}
-    .forms-inputs input{height: 50px;border: 2px solid #eee}
-    .forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}
-    .btn{height: 50px}
-    .success-data{display: flex;flex-direction: column}
-    .bxs-badge-check{font-size: 90px}
-    #matajer{
-        position: absolute;
-        left: 40px;
-    }
-   .inputTxt{
-        width: 400px;
-    }
-    /* #footer {
-        position: relative;
-        top: 200px;
-        width: 100%;
-
-    } */
-    body{
-        background: -webkit-linear-gradient(left, rgb(192, 190, 190), #385e3d8e);
-    }
-
 /* =========================================== */
   /* WL stylesheet */
 
@@ -505,10 +474,10 @@ body{
     left :100px;
 
 }
- /* =========================================== */
- body {
+.body_signUp {
     font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
-    background: #e9e9e9;
+
+    background: -webkit-linear-gradient(left, rgb(192, 190, 190), #7fb6b38e);
   }
   a,
   [type="submit"] {
@@ -636,24 +605,55 @@ body{
     color: #999;
 
   }
-  #matajer{
-    position: absolute;
-    left: 40px;
-}
-
-/* #nonFooter {
+#nonFooter {
     min-height: 100%;
     position:relative;
     /* Firefox */
-    /* min-height: -moz-calc(100% - 30px);
+    min-height: -moz-calc(100% - 30px);
     /* WebKit */
-    /* min-height: -webkit-calc(100% - 30px); */
+    min-height: -webkit-calc(100% - 30px);
     /* Opera */
-    /* min-height: -o-calc(100% - 30px); */
+    min-height: -o-calc(100% - 30px);
     /* Standard */
-    /* min-height: calc(100% - 30px); */
-/* } */
-
-body{
-    background: -webkit-linear-gradient(left, rgb(192, 190, 190), #7fb6b38e);
+    min-height: calc(100% - 30px);
 }
+#footer_signup {
+    position: absolute;
+    top: 600px;
+    width: 100%;
+
+}
+/************************signUp end***********************************************/
+
+
+/***************SIGN IN START*********************** ********/
+.card_sign_in{border: none;height: 320px}
+.forms-inputs{position: relative}
+.forms-inputs span{position: absolute;
+    top:-18px;
+    left: 10px;
+    background-color: #fff;
+    padding: 5px 10px;font-size: 15px}
+    .forms-inputs input{height: 50px;border: 2px solid #eee}
+    .forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}
+    .btn_signIn{height: 50px}
+    .success-data{display: flex;flex-direction: column}
+    .bxs-badge-check{font-size: 90px}
+
+   .inputTxt{
+        width: 400px;
+    }
+    #footer_signIN {
+        position: relative;
+        top: 200px;
+        width: 100%;
+
+    }
+    .body_signIn{
+        background: -webkit-linear-gradient(left, rgb(192, 190, 190), #385e3d8e);
+    }
+
+
+
+    /*************************SIGN IN END*******************************/
+
