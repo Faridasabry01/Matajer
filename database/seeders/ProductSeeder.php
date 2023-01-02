@@ -181,7 +181,208 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             No parabens. No silicone. No colorants.",
             "category_id"=> 2
         ]);
+         
+
+        Product::create([
+            'name'=>"ANASTASIA BEVERLY HILLS Waterproof Creme Liner Jet Black",
+            'price'=>500,
+            'quantity'=>40,
+            'brand'=>"ANASTASIA BEVERLY HILLS",
+            'image'=> asset("/storage/cosmetics/ANASTASIACremeLiner.jpg"),
+            'size'=>"30 ML",
+            'expires_at'=> now(),
+            'desc'=>"Matches all skin tones
+            Made Of High Qaulity Materials",
+            "category_id"=> 3
+        ]);
 
 
+        
+        Product::create([
+            'name'=>"Benefit Cosmetics Love Lip Tint Red",
+            'price'=>700 ,
+            'quantity'=>30,
+            'brand'=>"Benefit Cosmetics",
+            'image'=> asset("/storage/cosmetics/BenefitLipTint.jpg"),
+            'size'=>"15 ML",
+            'expires_at'=> now(),
+            'desc'=>"Perfect for all types of ocassion
+          .Looks great with any kind of attire
+           . Makes you look super glamorous
+           .The precise lip applicator glides right on for a gorgeous look in seconds
+           .Apply on lips and cheeks for kiss-proof, long-lasting vibrant color you're sure to love",
+            "category_id"=> 3
+        ]);
+
+        
+        Product::create([
+            'name'=>"essence The Blush Befitting",
+            'price'=>300,
+            'quantity'=>15,
+            'brand'=>"essence",
+            'image'=> asset("/storage/cosmetics/essenceTheBlushBefitting.jpeg"),
+            'size'=>"20 ML",
+            'expires_at'=> now(),
+            'desc'=>"Highly pigmented glittering particles ensure even colour pay-off
+            .Powdery texture blends effortlessly to impart a natural glow to your cheeks
+            .Carefully composed to feel light and remain crease-free
+            .This product is vegan, paraben free and cruelty free",
+            "category_id"=> 3
+        ]);
+
+        
+        Product::create([
+            'name'=>"Blossom Essentials 15 Brushes Set",
+            'price'=>800,
+            'quantity'=>10,
+            'brand'=>"essence",
+            'image'=> asset("/storage/cosmetics/EssentialsBrushes.jpg"),
+            'size'=>"14 Brushes",
+            'expires_at'=> now(),
+            'desc'=>"Powder Brush, Sculpt Brush, Blend Brush, Pencil Brush, Base Shadow Brush, 
+            Crease Brush, Nose Contour Brush, Shade Brush, Angle Shader Brush, Lip Liner Brush, 
+            Smokey Eye Brush, Corrector Brush, Micro Glow Brush, Concealer Brush, Eyeliner (new)",
+            "category_id"=> 3
+        ]);
+
+        
+        Product::create([
+            'name'=>"HUDA BEAUTY The New Eyeshadow Palette Multicolour",
+            'price'=>2500,
+            'quantity'=>10,
+            'brand'=>"HUDA BEAUTY",
+            'image'=> asset("/storage/cosmetics/HUDABEAUTYEyeshadow.jpeg"),
+            'size'=>"15 ML",
+            'expires_at'=> now(),
+            'desc'=>"18 insanely pigmented shades for infinite possibilities to flatter any skin tone</li>
+            <li>Apply on top of matte formulas for a high shimmer finish</li>
+            <li>Highly pigmented and crease resistant</li>
+            <li>Can be applied wet or dry</li>
+            <li>Includes is bare, crave, play, fantasy, love bite, spanked, lace, daydream, tickle, excite, 
+            infatuated, kinky, concealed, secret, tease, raw, charmed, teddy",
+            "category_id"=> 3
+        ]);
+
+        
+        Product::create([
+            'name'=>"L'Oréal Paris False Lash Superstar X Fiber Mascara – Black",
+            'price'=>300,
+            'quantity'=>16,
+            'brand'=>"LOréal",
+            'image'=> asset("/storage/cosmetics/LOréalMascara.jpg"),
+            'size'=>"30 ML",
+            'expires_at'=> now(),
+            'desc'=>"Extreme length, extreme volume, extreme buildability
+            .Lashes appear lifted and longer
+            .For our most dramatic false lash look
+           .20x more fibers for extreme length
+            .Without the hassle of False lashes or eyelash extensions",
+            "category_id"=> 3
+        ]);
+
+
+        
+        Product::create([
+            'name'=>"M.A.C Studio Fix Conceal & Correct Palette Multicolour",
+            'price'=>1900,
+            'quantity'=>10,
+            'brand'=>"M.A.C",
+            'image'=> asset("/storage/cosmetics/MACConcealAndCorrect.jpeg"),
+            'size'=>"4 COLORS",
+            'expires_at'=> now(),
+            'desc'=>"Gives a more defined look to your Look
+            .Offers perfect coverage for imperfections and blemishes
+            .Unique formulation keeps your Face comfortable and coloured up all day",
+            "category_id"=> 3
+        ]);
+
+
+        
+        
+
+        
+        Product::create([
+            'name'=>"MAYBELLINE NEW YORK Master Precise Liquid Eyeliner Black 110",
+            'price'=>600,
+            'quantity'=>10,
+            'brand'=>"MAYBELLINE",
+            'image'=> asset("/storage/cosmetics/MAYBELLINEEyeliner.jpg"),
+            'size'=>"25 ML",
+            'expires_at'=> now(),
+            'desc'=>"Long-wearing, water and smudge-proof eyeliner delivers precise definition in just one stroke
+            .Waterproof eyeliner features an ultra-fine tip that delivers the most defined, precise line
+           .Empowered with Ink-pigment technology providing stunning, defining lines as well as intense colour
+           .Creates endless eyeliner looks from natural daytime allure to ultimate smoky glamour
+            .Delivers an immediate impact of intense color",
+            "category_id"=> 3
+        ]);
+
+
+
+        
+        Product::create([
+            'name'=>"MAYBELLINE NEW YORK Lash Sensational Sky High Mascara Black",
+            'price'=>300,
+            'quantity'=>15,
+            'brand'=>"MAYBELLINE",
+            'image'=> asset("/storage/cosmetics/MAYBELLINESkyHighMascara.jpg"),
+            'size'=>"20 ML",
+            'expires_at'=> now(),
+            'desc'=>"Sky High lash impact from every angle
+          .Exclusive Flex Tower mascara brush reaches every lash
+           .Formula infused with Bamboo extract and fibers
+            .Mascara volume and long
+            .Long lasting mascara delivers full volume and limitless length",
+            "category_id"=> 3
+        ]);
+
+
+
+        
+        Product::create([
+            'name'=>"NYX PROFESSIONAL MAKEUP Ultimate Shadow Palette 16 color",
+            'price'=>1000,
+            'quantity'=>10,
+            'brand'=>"NYX",
+            'image'=> asset("/storage/cosmetics/NYXShadow.jpg"),
+            'size'=>"25 ML",
+            'expires_at'=> now(),
+            'desc'=>"16 Shades, Matte, Satin, Metallic
+           .Shade: Warm Neutrals",
+            "category_id"=> 3
+        ]);
+
+        
+        Product::create([
+            'name'=>"RIMMEL LONDON Stay Matte Pressed Powder Transparent ",
+            'price'=>300,
+            'quantity'=>10,
+            'brand'=>"RIMMEL LONDON",
+            'image'=> asset("/storage/cosmetics/RIMMELLONDONPressedPowder.jpeg"),
+            'size'=>"50 g",
+            'expires_at'=> now(),
+            'desc'=>"Broad spectrum SPF effectively protects skin from the harmful UVA and UVB rays
+           .Reduces skin blemishes and signs of early aging
+            .Delivers flawless coverage for a radiant and perfected-looking complexion
+          .Infused with moisturising agents that make your skin smooth and supple",
+            "category_id"=> 3
+        ]);
+
+
+        
+        Product::create([
+            'name'=>"SEPHORA COLLECTION Enchanted Mountains 3 Eye Shadow Palette Multicolor",
+            'price'=>700,
+            'quantity'=>10,
+            'brand'=>"SEPHORA COLLECTION",
+            'image'=> asset("/storage/cosmetics/SEPHORAEyeshadow.png"),
+            'size'=>"3 shadows",
+            'expires_at'=> now(),
+            'desc'=>"Highly pigmented eyeshadow shades
+           .Palettes are made up of super-soft, ultra-creamy powder
+            .eyeshadows with a velvety texture that blends like a dream",
+            "category_id"=> 3
+        ]);
+        
     }
 }

@@ -474,6 +474,7 @@ body{
     left :100px;
 
 }
+/******************************************************************/
 .body_signUp {
     font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
 
@@ -627,7 +628,7 @@ body{
 
 
 /***************SIGN IN START*********************** ********/
-.card_sign_in{border: none;height: 320px}
+.card_sign_in{border: none;height: 320px;width:500px;}
 .forms-inputs{position: relative}
 .forms-inputs span{position: absolute;
     top:-18px;
