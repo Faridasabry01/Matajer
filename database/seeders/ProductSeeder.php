@@ -25,8 +25,9 @@ class ProductSeeder extends Seeder
             'image'=> asset("/storage/haircare/EverPureArganOil.jpg"),
             'size'=>"300 Ml",
             'expires_at'=> now(),
-            'desc'=>"sulfate and paraben free. It softens the hair and doubles its length and density. Argan oil works to treat damaged hair as it contains many antioxidants that work to strengthen hair and restore health to it.
-             Helps soften hair and treats frizz. Argan oil is used to permanently eliminate dandruff.",
+            'desc'=>"sulfate and paraben free. It softens the hair and doubles its length and density.
+Argan oil works to treat damaged hair as it contains many antioxidants that work to strengthen hair and restore health to it.
+Helps soften hair and treats frizz. Argan oil is used to permanently eliminate dandruff.",
             "category_id"=> 2
         ]);
 
@@ -39,8 +40,8 @@ class ProductSeeder extends Seeder
             'size'=>"30 Ml",
             'expires_at'=> now(),
             'desc'=>"Repairs damaged and compromised hair.Strengthens and protects hair structure.Restores healthy appearance and texture.
-            Olaplex No.7 is a highly-concentrated, weightless restorative styling oil designed for all hair type.
-            It instantly delivers incredible shine, softness and adds color vibrancy to any hair, natural or color treated.",
+ Olaplex No.7 is a highly-concentrated, weightless restorative styling oil designed for all hair type.
+It instantly delivers incredible shine, softness and adds color vibrancy to any hair, natural or color treated.",
             "category_id"=> 2
         ]);
 

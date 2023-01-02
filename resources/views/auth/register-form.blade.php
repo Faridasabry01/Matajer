@@ -46,7 +46,7 @@
         </div>
         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
 
-        <div class="m-t-lg"style="margin-bottom: 40 em;">
+        <div class="m-t-lg"style="margin-bottom: 1em;">
           <ul class="list-inline">
             <li>
               <input class="btn btn--form" onclick="validate()" type="submit" value="Register" />

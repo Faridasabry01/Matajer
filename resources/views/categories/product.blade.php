@@ -3,21 +3,21 @@
 
 @section("content")
 
+
 <div class="bg-white shadow">
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
        @foreach ($categories as $category )
        <span class="font-semibold text-xl text-gray-800 leading-tight px-2 ">
         <a href="{{route("category.show",$category)}}"
-        class="{{$category->id == $product->category_id ? "btn btn-primary":"" }}"
+        class="{{$category->id == $product->category_id ? "btn btn-primary":""}}"
 
-        >{{ $category->name }}</a>
+        >{{$category->name}}</a>
     </span>
        @endforeach
 
     </div>
 
 </div>
-
 <div style="display:flex;">
     <div class="productPicDiv">
         <img class="productImg"src="{{$product->image}}" alt="ANASTASIA BEVERLY HILLS Waterproof Creme Liner Jet Black">
@@ -25,12 +25,11 @@
 
     <div class="productInfo">
             <pre style="width:fit-content; display: inline-block;">
-<h5 style="font-family: Georgia, 'Times New Roman', Times, serif;">{{$product->name}}</h5>
-<small>serial number: {{$product->id}} </small>                                                    <div class="wishlistDiv"><i id="wishlist" class="far fa-heart"></i></div>
+<div style="display: inline-block;font-family: Georgia, 'Times New Roman', Times, serif; font-size:1.7em">{{$product->name}}</div>      <div id="wishlistDIV"><i id="wishlist" class="far fa-heart"></i></div>
+serial number: {{$product->id}}
+Brand: {{$product->brand}}  Size: {{$product->size}}    Expires at: {{$product->expires_at}}
 <h5><strong>price: {{$product->price}} EGP </strong></h5>
-quantity: <input type="number" id="quantity" style="width:40px;">
-
-                                                            <button class="addToCart">Add to Cart</button>
+quantity: <input type="number" id="quantity" style="width:3.5em;">                                         <button class="addToCart">Add to Cart</button>
 
 description:
 {{$product->desc}}
@@ -39,8 +38,42 @@ description:
 <li>Natural coverage</li>
 <li>Made Of High Qaulity Materials</li>
 </ul> --}}
-
-
-            </pre>
+</pre>
     </div>
  </div>
+ <div id="reviews">
+    <div class="heading">
+        <h3 class="head">REVIEWS</h3>
+    </div>
+
+<div style="display: flex;">
+    <div class="reviewsComments">
+        <p >There are no reviews yet.</p>
+    </div>
+
+    <div>
+        <div>
+            <h5 >Review this product</h5>
+            <form action="" >
+            <pre>
+<label for="rating"style="color: black">Your Rating</label> <select name="rating" id="rating">
+                <option value="">Rate…</option>
+                <option value="5">Perfect</option>
+                <option value="4">Good</option>
+                <option value="3">Average</option>
+                <option value="2">Not that bad</option>
+                <option value="1">Very Poor</option>
+            </select></p>
+<textarea id="comment" name="comment" cols="30" rows="5" aria-required="true" placeholder="Your Review"></textarea>
+
+<input name="submit" type="submit" id="submit" class="submit" value="Submit">
+            </pre>
+
+            </form>
+
+
+        </div>
+    </div>
+</div>
+</div>
+ @endsection

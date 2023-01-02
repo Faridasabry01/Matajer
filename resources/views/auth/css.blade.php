@@ -11,14 +11,12 @@ right:100px;
 
 }
 .icon2{
-
 position: absolute;
 width: 50px;
 height: 50px;
 border-radius: 50%;
 top: 6px;
 right:40px;
-
 }
 /* cards */
 .cards{
@@ -28,32 +26,22 @@ right:40px;
 /* end */
 /*********************************************************/
 .pos_skincare{
-
-
-     position: absolute;
+    position: absolute;
     top: 140px;
     left :100px;
  }
-
  .pos_cosmetics{
-
-
-     position: absolute;
+    position: absolute;
     top: 90px;
     left :100px;
  }
-
  .pos_haircare{
-
-
-     position: absolute;
+   position: absolute;
     top: 90px;
     left :100px;
  }
  .pos_medicine{
-
-
-     position: absolute;
+    position: absolute;
     top: 90px;
     left :100px;
  }
@@ -71,14 +59,13 @@ right:40px;
      top: 6px;
      right: 150px;
      padding: 4px;
-     }
+}
 
  .img2{
      padding-left: 20px;
  margin-left: 150px;
      width:30%;
      height: fit-content;
-
  }
 
  .text1{
@@ -99,8 +86,6 @@ right:40px;
      padding-left: 15px;
      padding-top: 10px;
  }
-
-
  .flex{
      display: flex;
      height: 160px;
@@ -109,7 +94,6 @@ right:40px;
      flex-wrap: nowrap;
       /*border-bottom: 2px solid rgba(43, 42, 42, 0.171);*/
  }
-
  .bt{
      position: absolute;
      color:rgb(90, 87, 87);
@@ -123,11 +107,9 @@ right:40px;
      border-top-left-radius: 10px ;
      border-top-right-radius: 10px;
      border-color: rgb(209, 191, 191) ;
-
- }
+}
  button:hover{
      background-color: rgba(136, 133, 133, 0.473);
-
  }
  .endSection{
     /* display: inline-block;*/
@@ -137,7 +119,6 @@ right:40px;
  /*margin-block-start: 60px;*/
  position:absolute ;
  bottom: 0;
-
  color:rgb(9, 12, 12);
  border-top-left-radius:20px ;
  border-top-right-radius: 20px;
@@ -147,20 +128,17 @@ right:40px;
     left: 40px;
 }
 .cardsPos{
-
     position: relative;
-
 }
 #footer {
     position: relative;
-    top: 200px;
+    top: 10em;
+    /* position: absolute; */
+    bottom: 0;
     width: 100%;
-
 }
 .cards-wrapper{
-
     display: flex;
-
 }
 .card{
     margin: 0.5em;
@@ -173,16 +151,11 @@ right:40px;
     background-color: rgba(226, 218, 207, 0.247);
     width: 100%;
 }
- /* el hagat el etzawedet 3ashan el foooter (end)*/
-
  body{
+    height: 100%;
     background: -webkit-linear-gradient(left, rgb(192, 190, 190), #77917a8e);
 }
  /* el hagat el etzawedet 3ashan el foooter (end)*/
- /* ---------------------------------------------------------------------- */
- /*------------------------------------*/
-
-
 /* ------------------------------------------------- */
  /* products */
  .productPicDiv{
@@ -190,11 +163,10 @@ right:40px;
     width:475px;
     /* border-style: solid;
     border-color: rgb(214, 203, 203); */
-     margin-left: 300px;
-      margin-top: 90px;
-      margin-right: 20px;
-       display:inline-block;
-
+    margin-left: 300px;
+    margin-top: 90px;
+    margin-right: 20px;
+    display:inline-block;
  }
  .productImg{
     height:100%;
@@ -204,57 +176,47 @@ right:40px;
  .productInfo{
     display: inline-block;
     width: fit-content;
-    /*border-style: solid;
-     border-color: rgb(214, 203, 203);  */
     margin-left: 100px;
     height: 450px;
     width:475px;
     margin-top: 50px;
     flex: auto;
     max-width: 600px;
-
-
  }
-
- .wishlistDIV{
-    background-color: #cac7c7;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+ #wishlistDIV{
+    background-color: #4011dc;/*  cac7c7 */
+    border-radius: 2em;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,.1);
     display: inline-block;
-    width:35px;
+    width:2em;
     height:35px;
     text-align:center;
-    line-height:45px;
-
+    line-height:6em;
 }
 #wishlist{
-    font-size: 25px;
+    font-size: 2em;
 }
 #wishlist:hover{
     color:red;
 }
- .addToCart{
+.addToCart{
     border-radius: 3cm;
     background-color: #e0f3ddf6;
-
  }
  .addToCart:hover{
     background-color: rgb(241, 164, 241);
  }
  .reviewsForm{
     display: inline-block;
-    /* float: right; */
  }
  .reviewsComments{
     display: inline-block;
-    /* float: left; */
     margin-left:650px;
     margin-right: 250px;
  }
  .heading{
     display:table;
     width: 66%;
-
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -284,198 +246,156 @@ right:40px;
 .head:after {
     left: 0.5em;
     margin-right: -50%;
-  }
-
-  /* social icons */
-  .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
-  }
-
-  .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
-  }
-
-  .footer-basic .social > a:hover {
-    opacity:0.9;
-  }
-
-  /* .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#aaa;
-    margin-bottom:0;
-  } */
-
-  /* =========================================== */
-  /* SIGNUP */
-  body {
-    font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
-    background: #e9e9e9;
-  }
-  a,
-  [type="submit"] {
-    transition: all 0.25s ease-in;
-  }
-  .signup__container {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    transform: translateY(-50%);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: remy(800px);
-    height: remy(480px);
-    border-radius: remy(3px);
-    box-shadow: 0px remy(3px) remy(7px) rgba(0, 0, 0, 0.25);
-  }
-  .signup__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.76);
-  }
-  .container__child {
-    width: 50%;
-    height: 100%;
-    color: #fff;
-  }
-  .signup__thumbnail {
-    position: relative;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background: url(http://ultraimg.com/images/spectre-login.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-  }
-  .thumbnail__logo,
-  .thumbnail__content,
-  .thumbnail__links {
-    position: relative;
-    z-index: 2;
-  }
-  .thumbnail__logo {
-    align-self: flex-start;
-  }
-  .logo__shape {
-    fill: #fff;
-  }
-  .logo__text {
-    display: inline-block;
-    font-size: 0.8rem;
-    font-weight: 700;
-    vertical-align: bottom;
-  }
-  .thumbnail__content {
-    align-self: center;
-  }
-  h1,
-  h2 {
-    font-weight: 300;
-    color: rgba(255, 255, 255, 1);
-  }
-  .heading--primary {
-    font-size: 1.999rem;
-  }
-  .heading--secondary {
-    font-size: 1.414rem;
-  }
-  .thumbnail__links {
-    align-self: flex-end;
-    width: 100%;
-  }
-  .thumbnail__links a {
-    font-size: 1rem;
-    color: #fff;
-
-  }
-  .signup__form {
-    padding: 2.5rem;
-    background: #fafafa;
-  }
-  label {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    color: #ccc;
-  }
-  .form-control {
-    background-color: transparent;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-radius: 0;
-
-  }
-  [type="text"] {
-    color: #111;
-  }
-  [type="password"] {
-    color: #111;
-  }
-  .btn--form {
-    padding: 0.5rem 2.5rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    background: #111;
-    border-radius: remy(35px);
-
-  }
-  .signup__link {
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: underline;
-    color: #999;
-
-  }
-  #matajer{
-    position: absolute;
-    left: 40px;
 }
-
-#nonFooter {
-    min-height: 100%;
-    position:relative;
-    /* Firefox */
-    min-height: -moz-calc(100% - 30px);
-    /* WebKit */
-    min-height: -webkit-calc(100% - 30px);
-    /* Opera */
-    min-height: -o-calc(100% - 30px);
-    /* Standard */
-    min-height: calc(100% - 30px);
-}
-#footer {
-    position: absolute;
-    top: 600px;
-    width: 100%;
-
-}
+/* end */
+/* ---------------------------------------------------------------------- */
+     /*-------account------------*/
 body{
-    background: -webkit-linear-gradient(left, rgb(192, 190, 190), #7fb6b38e);
+    height: 100%;
+    background-color: white;
 }
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -10%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    font-size: 30px;
+    font-style: oblique;
+    color: rgb(49, 126, 130);
+}
+.profile-head h6{
+    font-size: 20px;
+    font-style: oblique;
+    color: rgb(49, 126, 130);
+}
+.profile-head p{
+    font: size 20px;
+    font-style: oblique;
+    color: rgb(98, 157, 161);
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #414d58;
+    cursor: pointer;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link.active{
+    font-size: 20px;
+    color: black;
+    font-style: oblique;
+    border: none;
+    border-bottom:2px solid rgb(49, 126, 130);
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-style: oblique;
+    font-size: 20px;
+    color: rgb(74, 131, 124);
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color:rgb(33, 156, 109);
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #1a8b8b;
+}
+.buttonn{
+
+    font-style: oblique;
+    background-color:transparent;
+    font-size: 150% ;
+    border: none;
+    color: rgb(33, 156, 109) ;
+}
+.col-md-6{
+    padding:0.5%;
+}
+/**********cart***********/
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+body{
+    height: 100%;
+    background-color: #eee;
+    font-family: 'Calibri', sans-serif !important;
+}
+.mt-100{
+   margin-top:100px;
+}
+.Cartt {
+    margin-bottom: 30px;
+    border: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    letter-spacing: .5px;
+    border-radius: 8px;
+    -webkit-box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
+    box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
+}
+.Cartt .Head-Cart {
+    background-color: #fff;
+    border-bottom: none;
+    padding: 24px;
+    border-bottom: 1px solid #295b78;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.Head-Cart:first-child {
+    border-radius: calc(.25rem - 2px) calc(.25rem - 2px) ;
+}
+.Cartt .Body-Cart {
+    padding: 30px;
+    background-color: transparent;
+}
+.btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+    background-color: #1b485b!important;
+    border-color: #c3c5cb!important;
+}
+
   /* =========================================== */
   /* SIGNin */
   body{background: #000}
@@ -587,145 +507,6 @@ body{
 
 }
  /* =========================================== */
- /* =========================================== */
-  /* cartstylesheet */
-
-    /*-------account------------*/
-    body{
-        background: -webkit-linear-gradient(left, rgb(192, 190, 190), #385e3d8e);
-    }
-    .emp-profile{
-        padding: 3%;
-        margin-top: 3%;
-        margin-bottom: 3%;
-        border-radius: 0.5rem;
-        background: #fff;
-    }
-    .profile-img{
-        text-align: center;
-    }
-    .profile-img img{
-        width: 70%;
-        height: 100%;
-    }
-    .profile-img .file {
-        position: relative;
-        overflow: hidden;
-        margin-top: -10%;
-        width: 70%;
-        border: none;
-        border-radius: 0;
-        font-size: 15px;
-        background: #212529b8;
-    }
-    .profile-img .file input {
-        position: absolute;
-        opacity: 0;
-        right: 0;
-        top: 0;
-    }
-    .profile-head h5{
-        font-size: 30px;
-        font-style: oblique;
-        color: rgb(49, 126, 130);
-    }
-    .profile-head h6{
-        font-size: 20px;
-        font-style: oblique;
-        color: rgb(78, 80, 79);
-    }
-    .profile-edit-btn{
-        border: none;
-        border-radius: 1.5rem;
-        width: 70%;
-        padding: 2%;
-        font-weight: 600;
-        color: #414d58;
-        cursor: pointer;
-    }
-
-
-    .profile-head .nav-tabs{
-        margin-bottom:5%;
-    }
-
-    .profile-head .nav-tabs .nav-link.active{
-        border: none;
-        border-bottom:2px solid rgb(49, 126, 130);
-    }
-    .profile-work{
-        padding: 14%;
-        margin-top: -15%;
-    }
-    .profile-work p{
-        font-size: 20px;
-        color: rgb(74, 131, 124);
-        font-weight: 600;
-        margin-top: 10%;
-    }
-    .profile-work a{
-        text-decoration: none;
-        color:rgb(33, 156, 109);
-        font-weight: 600;
-        font-size: 14px;
-    }
-    .profile-work ul{
-        list-style: none;
-    }
-    .profile-tab label{
-        font-weight: 600;
-    }
-    .profile-tab p{
-        font-weight: 600;
-        color: #1a8b8b;
-    }
-/**-------------cart-------------------*/
-@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
-
-body {
-    background-color: #eee;
-    font-family: 'Calibri', sans-serif !important;
-}
-
-.mt-100{
-   margin-top:100px;
-
-}
-
-
-.card {
-    margin-bottom: 30px;
-    border: 0;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    letter-spacing: .5px;
-    border-radius: 8px;
-    -webkit-box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
-    box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
-}
-
-.card .card-header {
-    background-color: #fff;
-    border-bottom: none;
-    padding: 24px;
-    border-bottom: 1px solid #295b78;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-.card-header:first-child {
-    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-}
-
-.card .card-body {
-    padding: 30px;
-    background-color: transparent;
-}
-
-.btn-primary, .btn-primary.disabled, .btn-primary:disabled {
-    background-color: #1b485b!important;
-    border-color: #c3c5cb!important;
-}
-
 
     </style>
 
