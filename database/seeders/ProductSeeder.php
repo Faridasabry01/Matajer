@@ -181,7 +181,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             No parabens. No silicone. No colorants.",
             "category_id"=> 2
         ]);
-         
+
 
         Product::create([
             'name'=>"ANASTASIA BEVERLY HILLS Waterproof Creme Liner Jet Black",
@@ -197,7 +197,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
         ]);
 
 
-        
+
         Product::create([
             'name'=>"Benefit Cosmetics Love Lip Tint Red",
             'price'=>700 ,
@@ -214,7 +214,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             "category_id"=> 3
         ]);
 
-        
+
         Product::create([
             'name'=>"essence The Blush Befitting",
             'price'=>300,
@@ -230,7 +230,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             "category_id"=> 3
         ]);
 
-        
+
         Product::create([
             'name'=>"Blossom Essentials 15 Brushes Set",
             'price'=>800,
@@ -239,13 +239,13 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             'image'=> asset("/storage/cosmetics/EssentialsBrushes.jpg"),
             'size'=>"14 Brushes",
             'expires_at'=> now(),
-            'desc'=>"Powder Brush, Sculpt Brush, Blend Brush, Pencil Brush, Base Shadow Brush, 
-            Crease Brush, Nose Contour Brush, Shade Brush, Angle Shader Brush, Lip Liner Brush, 
+            'desc'=>"Powder Brush, Sculpt Brush, Blend Brush, Pencil Brush, Base Shadow Brush,
+            Crease Brush, Nose Contour Brush, Shade Brush, Angle Shader Brush, Lip Liner Brush,
             Smokey Eye Brush, Corrector Brush, Micro Glow Brush, Concealer Brush, Eyeliner (new)",
             "category_id"=> 3
         ]);
 
-        
+
         Product::create([
             'name'=>"HUDA BEAUTY The New Eyeshadow Palette Multicolour",
             'price'=>2500,
@@ -258,12 +258,12 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             <li>Apply on top of matte formulas for a high shimmer finish</li>
             <li>Highly pigmented and crease resistant</li>
             <li>Can be applied wet or dry</li>
-            <li>Includes is bare, crave, play, fantasy, love bite, spanked, lace, daydream, tickle, excite, 
+            <li>Includes is bare, crave, play, fantasy, love bite, spanked, lace, daydream, tickle, excite,
             infatuated, kinky, concealed, secret, tease, raw, charmed, teddy",
             "category_id"=> 3
         ]);
 
-        
+
         Product::create([
             'name'=>"L'Oréal Paris False Lash Superstar X Fiber Mascara – Black",
             'price'=>300,
@@ -281,7 +281,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
         ]);
 
 
-        
+
         Product::create([
             'name'=>"M.A.C Studio Fix Conceal & Correct Palette Multicolour",
             'price'=>1900,
@@ -297,10 +297,10 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
         ]);
 
 
-        
-        
 
-        
+
+
+
         Product::create([
             'name'=>"MAYBELLINE NEW YORK Master Precise Liquid Eyeliner Black 110",
             'price'=>600,
@@ -319,7 +319,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
 
 
 
-        
+
         Product::create([
             'name'=>"MAYBELLINE NEW YORK Lash Sensational Sky High Mascara Black",
             'price'=>300,
@@ -338,7 +338,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
 
 
 
-        
+
         Product::create([
             'name'=>"NYX PROFESSIONAL MAKEUP Ultimate Shadow Palette 16 color",
             'price'=>1000,
@@ -352,7 +352,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             "category_id"=> 3
         ]);
 
-        
+
         Product::create([
             'name'=>"RIMMEL LONDON Stay Matte Pressed Powder Transparent ",
             'price'=>300,
@@ -369,7 +369,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
         ]);
 
 
-        
+
         Product::create([
             'name'=>"SEPHORA COLLECTION Enchanted Mountains 3 Eye Shadow Palette Multicolor",
             'price'=>700,
@@ -383,6 +383,184 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             .eyeshadows with a velvety texture that blends like a dream",
             "category_id"=> 3
         ]);
-        
+
+        // ---------------skin care-------------------
+        Product::create([
+            'name'=>"Cerave Hydrating Cleanser For Normal To Dry Skin With Hyaluronic Acid",
+            'price'=>250,
+            'quantity'=>20,
+            'brand'=>"CeraVe",
+            'image'=> asset("/storage/skincare/CeraveHydratingCleanserForNormalToDrySkin.jpg"),
+            'size'=>"236 Ml",
+            'expires_at'=> now(),
+            'desc'=>"Contains 3 Essential Ceramides to respect the skin's natural barrier.
+            With Hyaluronic Acid, this gentle non-foaming cleanser works to effectively cleanse the face and body.
+            Formulated with MVE Technology to lock in moisture, providing 24-hour hydration.
+            Gentle on skin. Fragrance-free and non-comedogenic. ",
+            "category_id"=> 1
+        ]);
+
+        Product::create([
+            'name'=>"Garnier Hydra Bomb Eye Anti Dark-Circles Tissue Mask With Orange Juice",
+            'price'=>30,
+            'quantity'=>20,
+            'brand'=>"Garnier",
+            'image'=> asset("/storage/skincare/GarnierEyeTissueMask.jpg"),
+            'size'=>"1 pair",
+            'expires_at'=> now(),
+            'desc'=>"Visibly REDUCES DARK CIRCLES & EYE-BAGS
+            Ultra-light MOISTURIZING formula
+            Under eyes are visibly depuffed, eye-bags and dark circles are less visible
+            Enriched with orange juice and hyaluronic acid
+            Dermatologically tested ",
+            "category_id"=> 1
+        ]);
+        Product::create([
+            'name'=>"CeraVe Foaming Cleanser for Normal to Oily Skin",
+            'price'=>250,
+            'quantity'=>20,
+            'brand'=>"CeraVe",
+            'image'=> asset("/storage/skincare/CeraVeFoamingCleanserforNormaltoOilySkin.jpg"),
+            'size'=>"236ml",
+            'expires_at'=> now(),
+            'desc'=>"Formulated with care
+            Category Type: Body and Face
+            Suitable Skin Type: Combination
+            Texture: Foam
+            Type: Cleansers",
+            "category_id"=> 1
+        ]);
+        Product::create([
+            'name'=>"Garnier Pores Refining Face Tissue Mask With Pure Charcoal & Seaweed",
+            'price'=>17,
+            'quantity'=>20,
+            'brand'=>"Garnier",
+            'image'=> asset("/storage/skincare/GarnierFaceTissueMask.jpg"),
+            'size'=>"1 sheet",
+            'expires_at'=> now(),
+            'desc'=>"Purifying + hydrating + pores visibly reduced​
+            1 mask = 1 week of hydrating serum for your skin​
+            With natural Charcoal, Black Seaweed extract, LHA & Hyaluronic Acid
+            Dermatologically tested",
+            "category_id"=> 1
+        ]);
+        Product::create([
+            'name'=>"Garnier Fast Bright Vitamin C Purifying Gel Wash Skin Care",
+            'price'=>100,
+            'quantity'=>20,
+            'brand'=>"Garnier",
+            'image'=> asset("/storage/skincare/GarnierVitaminCWash.jpg"),
+            'size'=>"400 ml",
+            'expires_at'=> now(),
+            'desc'=>"Boosted by Vitamin C and Lemon Extract
+            Oil control and removes 99.9% of bacteria from the face
+            Instantly Cleanses and Purifies Skin, revealing a brighter complexion
+            Light gel texture dermatologically tested to remove excess oil and impurities residues with no dry out
+            Dermatologically tested ",
+            "category_id"=> 1
+        ]);
+
+        Product::create([
+            'name'=>"La Roche-Posay Effaclar Purifying Foaming Gel Cleanser for Oily Skin",
+            'price'=>250,
+            'quantity'=>20,
+            'brand'=>"La Roche-Posay",
+            'image'=> asset("/storage/skincare/LaRochePosayEffaclarPurifyingFoamingGelCleanserforOilySkin.jpg"),
+            'size'=>"250 ml",
+            'expires_at'=> now(),
+            'desc'=>"Suitable Skin Type: All Skin Type
+            Recommended Use: Hydrating, Repairing, Anti-aging, Reducing Wrinkles, Fine Lines and Pimples
+            Gently cleanses impurities while respecting skin's pH balance.
+            Oil-free, soap free formula with Zinc Pidolate to purify skin. ",
+            "category_id"=> 1
+        ]);
+        Product::create([
+            'name'=>"LA ROCHE POSAY Effclar Micro Peeling Purifying Gel ",
+            'price'=>300,
+            'quantity'=>20,
+            'brand'=>"La Roche-Posay",
+            'image'=> asset("/storage/skincare/LAROCHEPOSAYEffclarMicroPeelingPurifyingGel.jpg"),
+            'size'=>"200 ML",
+            'expires_at'=> now(),
+            'desc'=>"Helps eliminate dead skin cells
+            Deeply unclogs pores and reduces excess sebum
+            Visibly reduces pimples and marks
+            Helps reduce breakout reccurence ",
+            "category_id"=> 1
+        ]);
+        Product::create([
+            'name'=>"Jade Roller Gua Sha Massage Set",
+            'price'=>110,
+            'quantity'=>20,
+            'brand'=>"generic",
+            'image'=> asset("/storage/skincare/JadeRoller.jpg"),
+            'size'=>"3 pieces",
+            'expires_at'=> now(),
+            'desc'=>"3-in-1 Natural Jade Stone Roller, Skin Care Face Massager Face Roller Eye Treatments Tool Kit
+            The double-ended face roller to apply to different parts of your face; Ridged Roller,
+            Same as the big roller, it can be used at forehead, cheek, neck and even arms, legs.
+            The Potholes and humps on the surface of the ridged roller can help promote blood circulation
+            and improve the health of your skin. The smaller roller is designed for around the lips, eyes.
+            The Gua Sha massage tool is ideal to reduce wrinkles and puffiness and can be used on the face,
+            neck, chin, back, arm, scalp, and waist as well as on the feet, back to improves blood circulation
+            so as to relax and relieve.",
+            "category_id"=> 1
+        ]);
+        Product::create([
+            'name'=>" Nivea Body Cream Cocoa Butter -White",
+            'price'=>40,
+            'quantity'=>20,
+            'brand'=>"Nivea",
+            'image'=> asset("/storage/skincare/NiveaBodyCream.jpg"),
+            'size'=>"200 Ml",
+            'expires_at'=> now(),
+            'desc'=>"Formulated with deep moisture serum
+            Enriched with cocoa butter and vitamin E
+            Provides indulging moisture care for 48hours
+            Suitable for dry skin
+            Skin compatibility dermatologically approved",
+            "category_id"=> 1
+        ]);
+
+        Product::create([
+            'name'=>"VICHY MINERAL 89 SERUM",
+            'price'=>600,
+            'quantity'=>20,
+            'brand'=>"VICHY",
+            'image'=> asset("/storage/skincare/VICHYMINERALSERUM.jpg"),
+            'size'=>"50ML",
+            'expires_at'=> now(),
+            'desc'=>"Minéral 89 is a non greasy gel formula combining all the power of high dose Vichy Mineralizing
+            Thermal Water with natural origin hyaluronic acid to strengthen skin’s barrier function
+            Apply 2 drops on your skin after cleansing morning and evening
+            Use as the first step of your skincare routine,Spread with outward movements
+            from the middle of the face, without applying too much pressure. ",
+            "category_id"=> 1
+        ]);
+        Product::create([
+            'name'=>"THE ORDINARY Hyaluronic Acid 2% + B5 Hydrator",
+            'price'=>400,
+            'quantity'=>20,
+            'brand'=>"THE ORDINARY",
+            'image'=> asset("/storage/skincare/THEORDINARYHyaluronicAcid.jpg"),
+            'size'=>"30 ml",
+            'expires_at'=> now(),
+            'desc'=>"a hydration support formula with ultra-pure, vegan hyaluronic acid
+            this system is supported with the addition of vitamin b5 which also enhances surface hydration",
+            "category_id"=> 1
+        ]);
+        Product::create([
+            'name'=>"VICHY NORMADERM CORRECTION DAILY CARE ",
+            'price'=>500,
+            'quantity'=>20,
+            'brand'=>"VICHY",
+            'image'=> asset("/storage/skincare/VICHYNORMADERMCORRECTION.jpg"),
+            'size'=>"50ML",
+            'expires_at'=> now(),
+            'desc'=>"Skincare-beauty: face treatment
+            Weight: 50 milliliters
+            for females ",
+            "category_id"=> 1
+        ]);
     }
 }
