@@ -41,7 +41,7 @@
                     <div class="forms-inputs mb-4"> <span>Password</span> <input name="password" class="inputTxt" id="passw" autocomplete="off" type="password" v-model="password"  v-on:blur="passwordBlured = true">
 
                     </div>
-                    <div class="mb-3"> <input class="btn_signIn btn-dark w-100" onclick="validate()" value="Sign-In" type="submit"></div>
+                    <div class="mb-3"> <input class="btn  btn-dark w-100" onclick="validate()" value="Sign-In" type="submit"></div>
                 </div>
 
             </div>
