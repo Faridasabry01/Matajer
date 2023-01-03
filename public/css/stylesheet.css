@@ -657,4 +657,43 @@ body{
 
 
     /*************************SIGN IN END*******************************/
+/**********LandingPage*************/
 
+.landing-main h1{
+    text-align: left;
+    font-size: 80px;
+    color: #000;
+    position: relative;
+    left:85px;
+    top: 80px;
+    font-style: oblique;
+  }
+
+
+  .para1 {
+    text-align: left;
+    position: relative;
+    left:85px;
+    font-size: 40px;
+    top: 20px;
+  }
+  .para2 {
+    text-align: left;
+    position: relative;
+    left:85px;
+    font-size: 30px;
+    top: 10px;
+  }
+  .btn1{
+    background-color: white;
+    padding: 0.5%;
+    font-size: 20px;
+  }
+  .btn2{
+    font-size: 20px;
+    background-color: white;
+    padding: 0.5%;
+    position: relative;
+    left: 130px;
+    bottom: 72px;
+  }

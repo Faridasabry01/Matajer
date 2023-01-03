@@ -1,11 +1,11 @@
 <?php
 
-namespace Database\Seeders;
+namespace Database/Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-use App\Models\Product;
-use App\Models\Category;
+use Illuminate/Database/Console/Seeds/WithoutModelEvents;
+use Illuminate/Database/Seeder;
+use App/Models/Product;
+use App/Models/Category;
 
 
 class ProductSeeder extends Seeder
@@ -562,5 +562,177 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             for females ",
             "category_id"=> 1
         ]);
+        // ---------------------------------------
+        Product::create([
+            'name'=>"Air Cam Walker Fracture Boot",
+            'price'=>4000,
+            'quantity'=>40,
+            'brand'=>"Uniteo Ortho",
+            'image'=> asset("/storage/imagesMedicalCare/AirCamWalker.jpg"),
+            'size'=>"L",
+            'expires_at'=> now(),
+            'desc'=>"The fracture boot for treatment and recovering sprain and fracture in the ankle or foot and for broken ankle,
+            can also be used for acute ankle sprains, soft tissue injuries, achilles tendon rupture, stable lower leg,
+            foot and ankle fractures and post-operative use.The air bladders can offer customize compression for further immobilization which provide maximum support and comfort.
+            And adjustable ROM Aluminum uprights allow for the flexion limit, allows you to lock in almost any specific ankle angle
+            or set parameters for a specific ankle range of motion, which fit comfortably foot and ankle flexion, limit foot
+            and ankle range of motion.Orthopedic boot lower profile and rocker-bottom design would effectively help gait natural when walking
+            to allow continuation of daily activities.The contoured strut of air cam boot provides increased durability and stability.",
+            "category_id"=> 4
+        ]);
+        Product::create([
+            'name'=>"Bepanthen Moisturizing Cream ",
+            'price'=>90,
+            'quantity'=>40,
+            'brand'=>"Bepanthen",
+            'image'=> asset("/storage/imagesMedicalCare/Bepanthen.jpg"),
+            'size'=>"30 G",
+            'expires_at'=> now(),
+            'desc'=>"The active substance dexpanthenol converts into vitamin pantothenic acid when applied onto the skin
+            It supports the development and regeneration of the skin from within
+            The cream has a soothing and cooling effect, because of its high moisture content",
+            "category_id"=> 4
+        ]);
+        Product::create([
+            'name'=>"Beurer Upper Arm Blood Pressure Scale ",
+            'price'=>2000,
+            'quantity'=>40,
+            'brand'=>"Beurer ",
+            'image'=> asset("/storage/imagesMedicalCare/BloodPressureScale.jpg"),
+            'size'=>"30 G",
+            'expires_at'=> now(),
+            'desc'=>"Large lcd display delivers the readings that help to clearly understand emergencies
+            Features large memory space that allows you to monitor your health growth
+            Premium material ensures prolonged usage
+            Date and time/automatic switch-off",
+            "category_id"=> 4
+        ]);
+        Product::create([
+            'name'=>"Close Up Toothpaste White Now Gold ",
+            'price'=>30,
+            'quantity'=>40,
+            'brand'=>"Close Up ",
+            'image'=> asset("/storage/imagesMedicalCare/CloseUpToothpaste.jpg"),
+            'size'=>"75ML",
+            'expires_at'=> now(),
+            'desc'=>"Close Up White Now Gold Toothpaste boosts the whiteness of your teeth, making it up to 3X whiter instantly
+            .A Toothpaste with advanced colour science technology- White-Correct Technology with blue-sapphire pigments
+            works like colour correcting cosmetics to remove stains and create a unique shade of white.
+            With zero-abrasive instant whitening ingredients, Close Up Whitening toothpaste is safe on enamel.
+            High-quality ingredients combined with this whitening toothpaste help fight cavities and keep your breath fresh",
+            "category_id"=> 4
+        ]);
+        Product::create([
+            'name'=>"LISTERINE Mouthwash ",
+            'price'=>50,
+            'quantity'=>40,
+            'brand'=>"LISTERINE ",
+            'image'=> asset("/storage/imagesMedicalCare/LISTERINEMouthwash.jpg"),
+            'size'=>"250ml",
+            'expires_at'=> now(),
+            'desc'=>"Helps prevent & reduce plaque, a major cause of gum disease.Helps fight bacteria between teeth",
+            "category_id"=> 4
+        ]);
+
+        Product::create([
+            'name'=>"Moov Rapid Pain Relief Spray ",
+            'price'=>250,
+            'quantity'=>40,
+            'brand'=>"Moov ",
+            'image'=> asset("/storage/imagesMedicalCare/moov.jpg"),
+            'size'=>"250ml",
+            'expires_at'=> now(),
+            'desc'=>"Ayurvedic topical application pain reliever
+            Helps in relieving pain and inflammation",
+            "category_id"=> 4
+        ]);
+
+        Product::create([
+            'name'=>"Oral-B Pro 3 Electric ToothBrush -Black Edition",
+            'price'=>2000,
+            'quantity'=>40,
+            'brand'=>"Moov ",
+            'image'=> asset("/storage/imagesMedicalCare/OralBElectricToothBrush.jpg"),
+            'size'=>"standard",
+            'expires_at'=> now(),
+            'desc'=>"DEEP CLEANING AND HEALTHIER GUMS with 360 ̊ GUM PRESSURE CONTROL that visibly alerts you if you brush too hard
+            3 BRUSHING MODES: daily clean, whitening and sensitive
+            Battery lasts more than 2 weeks with 1 charge with the Lithium-ION battery",
+            "category_id"=> 4
+        ]);
+
+        Product::create([
+            'name'=>"Oral-B Satin Tape Floss Mint",
+            'price'=>50,
+            'quantity'=>40,
+            'brand'=>"Oral-B ",
+            'image'=> asset("/storage/imagesMedicalCare/OralBFloss.jpg"),
+            'size'=>"standard",
+            'expires_at'=> now(),
+            'desc'=>"Flossing action for a fresh clean feeling.
+            Single-strand floss designed to resist shredding and breakage
+            Smooth, oval design for easy insertion between teeth, easy to grip even when wet.",
+            "category_id"=> 4
+        ]);
+
+        Product::create([
+            'name'=>"Pill Pro Weekly Pill Organizer",
+            'price'=>100,
+            'quantity'=>40,
+            'brand'=>"pill pro ",
+            'image'=> asset("/storage/imagesMedicalCare/PillOrganizer.jpg"),
+            'size'=>"standard",
+            'expires_at'=> now(),
+            'desc'=>"Declutter your counter. Pill Pro is the size of a coffee mug
+            7 Day pill organizer
+            7 Portable trays conveniently stack on top of each other
+            4 Compartments in each tray
+            Never miss a dosage again",
+            "category_id"=> 4
+        ]);
+        Product::create([
+            'name'=>"Sensodyne Gum Care Toothbrush for Sensitive Teeth - Soft",
+            'price'=>25,
+            'quantity'=>40,
+            'brand'=>"Sensodyne ",
+            'image'=> asset("/storage/imagesMedicalCare/SensodyneToothbrush.jpg"),
+            'size'=>"standard",
+            'expires_at'=> now(),
+            'desc'=>"Soft silk filamentsSoft circular endings designed to be gentle on the gumsDome-shaped head
+            and fine filaments designed for easily adaptation to the sensitive areas (gum line)",
+            "category_id"=> 4
+        ]);
+        Product::create([
+            'name'=>"Sensodyne Multi Care and Whitening Toothpaste for Sensitive Teeth",
+            'price'=>50,
+            'quantity'=>40,
+            'brand'=>"Sensodyne ",
+            'image'=> asset("/storage/imagesMedicalCare/SensodyneToothpaste.jpg"),
+            'size'=>"100 ml",
+            'expires_at'=> now(),
+            'desc'=>"Sensitivity relief.
+            Lasting sensitivity protection
+            With fluoride for cavity protection
+            Its minty taste keeps mouth feeling clean and fresh
+            Helps remove plaque",
+            "category_id"=> 4
+        ]);
+        Product::create([
+            'name'=>"Digital Thick Glass Weighing Scale",
+            'price'=>300,
+            'quantity'=>40,
+            'brand'=>"genaric ",
+            'image'=> asset("/storage/imagesMedicalCare/SensodyneToothpaste.jpg"),
+            'size'=>"standard",
+            'expires_at'=> now(),
+            'desc'=>"weight measuring machine.
+            weight digital machine",
+            "category_id"=>4
+        ]);
+
+
+
+
+
     }
 }
