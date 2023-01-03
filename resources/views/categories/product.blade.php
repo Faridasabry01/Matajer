@@ -23,9 +23,14 @@
         <img class="productImg"src="{{$product->image}}" alt="ANASTASIA BEVERLY HILLS Waterproof Creme Liner Jet Black">
     </div>
 
+
     <div class="productInfo">
             <pre style="width:fit-content; display: inline-block;">
-<div style="display: inline-block;font-family: Georgia, 'Times New Roman', Times, serif; font-size:1.7em">{{$product->name}}</div>      <div id="wishlistDIV"><i id="wishlist" class="far fa-heart"></i></div>
+<div class="d-flex ">
+    <div style="display: inline-block;font-family: Georgia, 'Times New Roman', Times, serif; font-size:1.7em">{{$product->name}}</div>
+<div id="wishlistDIV" class="ml-4"><a href="{{route("favourite.product",$product->id)}}"><i id="{{$product->isFavorited() !== true ? "wishlist":"wishlistFavourite"}}" class="far fa-heart"></i></a></div>
+</div>
+
 serial number: {{$product->id}}
 Brand: {{$product->brand}}  Size: {{$product->size}}    Expires at: {{$product->expires_at}}
 <h5><strong>price: {{$product->price}} EGP </strong></h5>

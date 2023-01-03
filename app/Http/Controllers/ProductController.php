@@ -8,6 +8,8 @@ use App\Http\Requests\UpdateProductRequest;
 use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
+use Illuminate\Support\Facades\Auth;
+
 
 class ProductController extends Controller
 {
@@ -87,5 +89,16 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         //
+    }
+
+    public function favouriteProduct($id)
+    {
+        $product = Product::find($id);
+
+        if ($product) {
+            $user = Auth::user();
+            $user->toggleFavorite($product);
+            return redirect(route("product.show",$id));
+        }
     }
 }

@@ -193,6 +193,11 @@ right:40px;
 #wishlist{
     font-size: 2em;
 }
+#wishlistFavourite{
+    font-size: 2em;
+    color:red;
+
+}
 #wishlist:hover{
     color:red;
 }
