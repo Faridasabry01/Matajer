@@ -34,7 +34,7 @@
 serial number: {{$product->id}}
 Brand: {{$product->brand}}  Size: {{$product->size}}    Expires at: {{$product->expires_at}}
 <h5><strong>price: {{$product->price}} EGP </strong></h5>
-quantity: <input type="number" id="quantity" style="width:3.5em;">                                         <button class="addToCart">Add to Cart</button>
+quantity: <input type="number" id="quantity" style="width:3.5em;">                                         <a class="addToCart p-2" href="{{route("client.post.cart",$product->id)}}">Add to Cart</a>
 
 description:
 {{$product->desc}}

@@ -40,6 +40,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/category/{category}', [CategoryController::class, 'show'])->name('category.show');
     Route::get('/product/{product}', [ProductController::class, 'show'])->name('product.show');
     Route::get('/favourite/{id}',[ProductController::class, 'favouriteProduct'])->name("favourite.product");
+    Route::get('/cart', [HomeController::class,'getCart'])->name("client.get.cart");
+    Route::get('/addToCart/{productid}', [HomeController::class,'addToCart'])->name("client.post.cart");
 
 });
 

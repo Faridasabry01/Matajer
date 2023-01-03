@@ -49,7 +49,7 @@
 
           @auth
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="cart.html">My Cart</a>
+              <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a>
             </li>
 
           @endauth
