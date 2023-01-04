@@ -51,6 +51,9 @@
           <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist",Auth::user()->id)}}">Wishlist</a>
+              </li>
 
           @endauth
         </ul>
