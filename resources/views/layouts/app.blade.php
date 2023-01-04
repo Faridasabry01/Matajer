@@ -43,6 +43,9 @@
                         {{ __('Log Out') }}
                     </x-dropdown-link>
                 </form>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route("client.wishlist",Auth::user()->id)}}"><img src="/storage/navbar/Heart-icon.png"> </a>
+                  </li>
                @yield("content")
             </main>
             @include('auth.footer')
