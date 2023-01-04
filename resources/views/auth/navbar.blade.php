@@ -52,7 +52,7 @@
               <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist",Auth::user()->id)}}">Wishlist</a>
+                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist",Auth::user()->id)}}"><img src="/storage/navbar/Heart-icon.png"> </a>
               </li>
 
           @endauth
