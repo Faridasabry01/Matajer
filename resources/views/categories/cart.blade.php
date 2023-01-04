@@ -21,7 +21,12 @@
 
             </div>
 
-           </div>
+            <div class=”Header”>
+            <h5 class=”Heading”>Shopping Cart</h5>
+            <h6 class=”Action”>Remove all</h6>
+            </div>
+                    
+
        </div>
    </div>
 
