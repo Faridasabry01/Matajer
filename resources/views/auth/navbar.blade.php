@@ -1,5 +1,3 @@
-{{-- @extends("layouts.guest") --}}
-
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Container wrapper -->
