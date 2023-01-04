@@ -129,7 +129,7 @@ right:40px;
 }
 #footer {
     position: relative;
-    top: 25em;
+    top: 35em;
     /* position: absolute; */
     bottom: 0;
     width: 100%;
@@ -402,7 +402,56 @@ body{
 
   /* =========================================== */
 /* =========================================== */
-  /* WL stylesheet */
+  /* ===========================wishlist=================== */
+  @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+  body {
+      background-color: #eee;
+      font-family: 'Calibri', sans-serif !important;
+  }
+
+  .mt-100{
+     margin-top:100px;
+
+  }
+
+
+  .card {
+      margin-bottom: 30px;
+      border: 0;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      letter-spacing: .5px;
+      border-radius: 8px;
+      -webkit-box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
+      box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
+  }
+
+  .card .card-header {
+      background-color: #fff;
+      border-bottom: none;
+      padding: 24px;
+      border-bottom: 1px solid #295b78;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+  }
+
+  .card-header:first-child {
+      border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+  }
+
+
+
+  .card .card-body {
+      padding: 30px;
+      background-color: transparent;
+  }
+
+  .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+      background-color: #1b485b!important;
+      border-color: #c3c5cb!important;
+  }
+/* ======= */
 
   @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
@@ -633,31 +682,92 @@ body{
 
 
 /***************SIGN IN START*********************** ********/
-.card{border: none;height: 320px;}
-.forms-inputs{position: relative}
-.forms-inputs span{position: absolute;
-    top:-18px;
-    left: 10px;
-    background-color: #fff;
-    padding: 5px 10px;font-size: 15px}
-    .forms-inputs input{height: 50px;border: 2px solid #eee}
-    .forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}
-    .btn{height: 50px}
-    .success-data{display: flex;flex-direction: column}
-    .bxs-badge-check{font-size: 90px}
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
-   .inputTxt{
-        width: 400px;
-    }
-    #footer_signIN {
-        position: relative;
-        top: 200px;
-        width: 100%;
+body {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
 
-    }
-    .body_signIn{
-        background: -webkit-linear-gradient(left, rgb(192, 190, 190), #385e3d8e);
-    }
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container:hover .top:before, .container:hover .top:after, .container:hover .bottom:before, .container:hover .bottom:after, .container:active .top:before, .container:active .top:after, .container:active .bottom:before, .container:active .bottom:after {
+  margin-left: 200px;
+  transform-origin: -200px 50%;
+  transition-delay: 0s;
+}
+.container:hover .center, .container:active .center {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.top:before, .top:after, .bottom:before, .bottom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200vmax;
+  height: 200vmax;
+  top: 50%;
+  left: 50%;
+  margin-top: -100vmax;
+  transform-origin: 0 50%;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  z-index: 10;
+  opacity: 0.65;
+  transition-delay: 0.2s;
+}
+
+.top:before {
+  transform: rotate(45deg);
+  background: #e46569;
+}
+.top:after {
+  transform: rotate(135deg);
+  background: #ecaf81;
+}
+
+.bottom:before {
+  transform: rotate(-45deg);
+  background: #60b8d4;
+}
+.bottom:after {
+  transform: rotate(-135deg);
+  background: #3745b5;
+}
+
+.center {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  transition-delay: 0s;
+  color: #333;
+}
+.center input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
 
 
 

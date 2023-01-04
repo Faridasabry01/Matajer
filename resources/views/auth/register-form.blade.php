@@ -52,7 +52,7 @@
               <input class="btn btn--form" onclick="validate()" type="submit" value="Register" />
             </li>
             <li>
-              <a class="signup__link" href="signIn.html">I am already a member</a>
+              <a class="signup__link" href="{{ route("login") }}">I am already a member</a>
             </li>
           </ul>
         </div>
