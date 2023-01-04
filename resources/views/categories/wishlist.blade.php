@@ -35,7 +35,7 @@ dd($user->favorite(Product::class););
    {{--
     @foreach ($wlproducts as $wlproducts )
 
-    </span>
+
        @endforeach --}}
 
 @endsection
