@@ -150,7 +150,8 @@ right:40px;
 }
  body{
     height: 100%;
-    background: -webkit-linear-gradient(left, rgb(192, 190, 190), #77917a8e);
+    background-color: #000;
+    /* background: -webkit-linear-gradient(left, rgb(192, 190, 190), #77917a8e); */
 }
  /* el hagat el etzawedet 3ashan el foooter (end)*/
 /* ------------------------------------------------- */
@@ -255,7 +256,7 @@ right:40px;
 /* ---------------------------------------------------------------------- */
      /*-------account------------*/
 body{
-    height: 100%;
+    /* height: 100%; */
     background-color: white;
 }
 .emp-profile{
@@ -363,8 +364,8 @@ body{
 /**********cart***********/
 @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 body{
-    height: 100%;
-    background-color: #eee;
+    /* height: 100%; */
+    /* background-color: #eee; */
     font-family: 'Calibri', sans-serif !important;
 }
 .mt-100{
@@ -532,7 +533,7 @@ body{
 .body_signUp {
     font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
 
-    background: -webkit-linear-gradient(left, rgb(192, 190, 190), #7fb6b38e);
+    /* background: -webkit-linear-gradient(left, rgb(192, 190, 190), #7fb6b38e); */
   }
   a,
   [type="submit"] {
@@ -688,7 +689,7 @@ body{
 }
 
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   font-family: "Raleway", sans-serif;
 }
 
