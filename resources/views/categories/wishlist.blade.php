@@ -101,6 +101,6 @@ dd($user->favorite(Product::class););
     @foreach ($wlproducts as $wlproducts )
 
 
-       @endforeach --}}
+    @endforeach --}}
 
 @endsection
