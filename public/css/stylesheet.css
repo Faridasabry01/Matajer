@@ -402,7 +402,7 @@ body{
 
   /* =========================================== */
 /* =========================================== */
-  /* ===========================wishlist=================== */
+  /* ===========================wishlist===================
   @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
   body {
@@ -453,7 +453,7 @@ body{
   }
 /* ======= */
 
-  @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+  /* @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
   body {
       background-color: #eee;
@@ -504,7 +504,7 @@ body{
 
   /* =========================================== */
   /* mystylesheet */
-  .divabout{
+  /* .divabout{
     background-color: rgb(223, 223, 223);
     margin-left: 300px;
     width: 700px;
@@ -527,8 +527,8 @@ body{
     bottom:  50px;
     left :100px;
 
-}
-/******************************************************************/
+} */
+/*************************SIGNUP*****************************************/
 .body_signUp {
     font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
 
