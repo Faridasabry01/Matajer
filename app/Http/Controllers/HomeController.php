@@ -42,4 +42,12 @@ class HomeController extends Controller
 
 
     }
+    public function wishlist($userid)
+    {
+        $user=Auth::user();
+        $wlproducts=$user->favorite(Product::class);
+
+        return view("categories.wishlist",["wlproducts"=>$wlproducts]);
+
+    }
 }

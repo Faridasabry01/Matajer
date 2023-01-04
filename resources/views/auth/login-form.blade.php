@@ -62,7 +62,7 @@
           <input name="email" type="email" placeholder="email"/>
           <x-input-error :messages="$errors->get('email')" class="mt-2" />
           <input name="password" type="password" placeholder="password"/>
-          <input style="font-weight: bolder;"type="submit"  />
+          <input   style="border-radius: 10px;" class="button_input"type="submit"  />
           <h2>&nbsp;</h2>
         </div>
     </div>

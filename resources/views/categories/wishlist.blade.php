@@ -2,6 +2,8 @@
 
 
 @section("content")
+
+dd($user->favorite(Product::class););
 <div class="container-fluid  mt-100">
     <div class="row">
 
@@ -29,5 +31,11 @@
     </div>
 
    </div>
+
+   {{--
+    @foreach ($wlproducts as $wlproducts )
+
+    </span>
+       @endforeach --}}
 
 @endsection

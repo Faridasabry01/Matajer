@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\HomeController;
 
 
+
 use Illuminate\Support\Facades\Route;
 use App\Models\Category;
 use App\Models\Product;
