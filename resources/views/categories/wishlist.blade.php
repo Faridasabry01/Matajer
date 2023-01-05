@@ -27,11 +27,11 @@ dd($user->favorite(Product::class););
                         <table class="w-full text-sm lg:text-base" cellspacing="0">
                           <thead>
                             <tr class="h-12 uppercase">
-                              <th class="hidden md:table-cell"></th>
+                              <th class="hidden md:table-cell">Image</th>
                               <th class="text-left">Name</th>
 
-                              <th class="hidden text-right md:table-cell"> price</th>
-                              <th class="hidden text-right md:table-cell"> Add to cart </th>
+                              <th class="hidden text-right md:table-cell"> Add to cart</th>
+                              <th class="hidden text-right md:table-cell"> Remove </th>
                             </tr>
                           </thead>
                           <tbody>
@@ -48,31 +48,14 @@ dd($user->favorite(Product::class););
 
 
                                 </a>
-                                <span>price:{{ $wlproducts->price }}</span>
+                                <span>  price:{{ $wlproducts->price }}</span>
                               </td>
-                              <td class="justify-center mt-6 md:justify-end md:flex">
-                                <div class="h-10 w-28">
-                                  <div class="relative flex flex-row w-full h-8">
-
-                                    <form action="{{ route('client.wishlist') }}" method="POST">
-                                      @csrf
-                                      <input type="hidden" name="id" value="{{ $wlproducts->name}}" >
-
-                                    class="w-6 text-center bg-gray-300" />
-                                    <button type="submit" class="px-2 pb-2 ml-2 text-white bg-blue-500">update</button>
-                                    </form>
-                                  </div>
-                                </div>
-                              </td>
-                              <td class="hidden text-right md:table-cell">
-                                <span class="text-sm font-medium lg:text-base">
-                                    ${{ $wlproducts->price }}
-                                </span>
-                              </td>
+                              
+                              
                               <td class="hidden text-right md:table-cell">
                                 <form action="{{ route('client.get.cart') }}" method="POST">
                                   @csrf
-                                  <input type="hidden" value="{{ $wlproducts->id }}" name="id">
+                                  <button class="px-4 py-2 text-black ">Add to cart</button>
                                   <button class="px-4 py-2 text-white bg-red-600">x</button>
                               </form>
 
