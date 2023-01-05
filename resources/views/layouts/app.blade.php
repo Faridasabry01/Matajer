@@ -20,8 +20,9 @@
     </head>
     <body class="font-sans antialiased" >
         <div class="">
-            {{-- @include("auth.navbar") --}}
-            @include("categories.navbar_test")
+            @include("auth.navbar")
+            {{-- @include("categories.navbar_test") --}}
+
 
             {{-- @include('layouts.navigation') --}}
 
@@ -36,7 +37,7 @@
 
             <!-- Page Content -->
             <main>
-                <form method="POST" action="{{ route('logout') }}">
+                {{-- <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
                     <x-dropdown-link :href="route('logout')"
@@ -47,7 +48,7 @@
                 </form>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route("client.wishlist")}}"><img src="/storage/navbar/Heart-icon.png"> </a>
-                  </li>
+                  </li> --}}
                @yield("content")
             </main>
             @include('auth.footer')

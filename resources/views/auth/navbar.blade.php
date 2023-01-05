@@ -20,37 +20,37 @@
         class="collapse navbar-collapse justify-content-center"
         id="navbarCenteredExample"
       >
-      <a  href="Matajer.html"id="matajer"><img src="{{asset('images/logotransparent.svg')}}" style="width: 40px; "></a>
+      <a  href="{{route("client.get.home")}}"id="matajer"><img src="{{asset('images/logotransparent.svg')}}" style="width: 40px; "></a>
         <!-- Left links -->
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Matajer.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{route("client.get.home")}}client.get.home">Home</a>
           </li>
 
-          <li class="nav-item">
-            <ol class="login-nav">
+          {{-- <li class="nav-item">
+            <ol class="login-nav"> --}}
            @guest
            @if (Route::currentRouteName()=="login")
            <li>
-               <a class="nav-link active" aria-current="page" href="{{ route("register") }}">Register</a>
+               <a class="nav-link active" aria-current="page" href="{{ route("register") }}"> Register</a>
            </li>
            @else
            <li>
-               <a class="nav-link active" aria-current="page" href="{{ route("login") }}">Login</a>
+               <a class="nav-link active" aria-current="page" href="{{ route("login") }}"> Login</a>
            </li>
            @endif
 
            @endguest
-            <a class="nav-link active" aria-current="page" href="joinUs.html">Join Us </a> --}}
-          </li>
-         </ol>
+            {{-- <a class="nav-link active" aria-current="page" href="joinUs.html">Join Us </a> --}}
+          {{-- </li> --}}
+         {{-- </ol> --}}
 
           @auth
           <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist",Auth::user()->id)}}"><img src="/storage/navbar/Heart-icon.png"> </a>
+                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist",Auth::user()->id)}}"><i class="fa fa-heart" style="font-size:36px; color:grey;"></i> </a>
               </li>
 
           @endauth
@@ -104,14 +104,17 @@
       <!-- Right elements -->
 <div class="d-flex align-items-center">
     <!-- Icon -->
-    <a class="text-reset me-3" href="#">
+    @auth
+      <a class="text-reset me-3" href="{{route("client.get.cart")}}">
       <i class="fas fa-shopping-cart"></i>
     </a>
+
+    @endauth
 
     </div>
 
 
-    <ol class="login-nav">
+    {{-- <ol class="login-nav">
 
 
         @if (Route::currentRouteName()=="login")
@@ -121,7 +124,7 @@
 
 
         @endif
-    </ol>
+    </ol> --}}
 
 
 

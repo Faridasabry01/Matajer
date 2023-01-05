@@ -584,13 +584,13 @@ body{
 
 
 /***************SIGN IN START*********************** ********/
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
 body {
-  /* min-height: 100vh; */
+   min-height: 100vh;
   font-family: "Raleway", sans-serif;
 }
 
@@ -669,7 +669,7 @@ body {
   border-radius: 1px;
   border: 1px solid #ccc;
   font-family: inherit;
-}
+} */
 
 
 

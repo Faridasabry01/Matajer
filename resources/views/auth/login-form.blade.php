@@ -1,6 +1,7 @@
 @extends("layouts.guest")
 
 
+
 @section("content")
 
 {{-- <div class="container mt-5">
@@ -72,4 +73,8 @@
 
 
 @endsection
+
+@push('styles')
+    <link rel="stylesheet" href={{ asset('css/login.css')}}>
+@endpush
 
