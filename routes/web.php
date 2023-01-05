@@ -44,6 +44,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/cart', [HomeController::class,'getCart'])->name("client.get.cart");
     Route::get('/addToCart/{productid}', [HomeController::class,'addToCart'])->name("client.post.cart");
     Route::get('/wishlist', [HomeController::class, 'wishlist'])->name('client.wishlist');
+    Route::get('/addToCartWL/{productid}', [HomeController::class,'addToCartWL'])->name("client.WLcart");
 
 });
 

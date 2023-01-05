@@ -34,35 +34,35 @@
                             </tr>
                           </thead>
                           <tbody>
-                          @foreach ($wlproducts as $wlproducts )
+                          @foreach ($wlproducts as $product )
                             <tr>
                               <td class="hidden pb-4 md:table-cell">
                                 <a href="#">
-                                  <img src="{{ $wlproducts->image }}" class="w-20 rounded" alt="Thumbnail">
+                                  <img src="{{ $product->image }}" class="w-20 rounded" alt="Thumbnail">
                                 </a>
                               </td>
                               <td>
                                 <a href="#">
-                                  <p class="mb-2 md:ml-4">{{ $wlproducts->name }}</p>
+                                  <p class="mb-2 md:ml-4">{{ $product->name }}</p>
 
 
                                 </a>
-                                <span>  price:{{ $wlproducts->price }}</span>
+                                <span>  price:{{ $product->price }}</span>
                               </td>
-                              
-                              
+
+
                               <td class="hidden text-right md:table-cell">
-                                <form action="{{ route('client.get.cart') }}" method="POST">
+                                {{-- <form action="{{ route('client.get.cart') }}" method="POST"> --}}
                                   @csrf
-                                  <a class="addToCart p-2" href="{{route("client.post.cart",$product->id)}}">Add to Cart </a>
-                                  
-                              </form>
+                                  <a class="addToCart p-2" href="{{route("client.WLcart", $product->id)}}">Add to Cart </a>
+
+                              {{-- </form> --}}
 
                               </td>
                               <td class="hiddenn text-right md:table-cell">
-                                <form action="{{ route('client.get.cart') }}" method="POST">
+                                <form action="{{ $product->removeFavorite(); }}" method="get">
                                   @csrf
-                                  
+
                                   <button class="px-4 py-2 text-white bg-red-600">x</button>
                               </form>
 
@@ -90,7 +90,7 @@
    </div>
 
    {{--
-    @foreach ($wlproducts as $wlproducts )
+    @foreach ($product as $product )
 
 
     @endforeach --}}

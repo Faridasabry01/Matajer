@@ -50,4 +50,30 @@ class HomeController extends Controller
         return view("categories.wishlist",["wlproducts"=>$wlproducts]);
 
     }
+    public function addToCartWL($productid)
+    {
+
+        $product = Product::find($productid);
+        $cart = Auth::user()->cart;
+        if (!$cart) {
+            $cart = Cart::create([
+                "user_id"=>Auth::user()->id,
+                'total_price'=>0
+                ,'num_of_items'=>0
+
+            ]);
+            $cart->Product()->attach($productid,["quantity"=>1]);
+             //return redirect(route("client.wishlist"));
+             return view("categories.wishlist",["wlproducts"=>$wlproducts]);
+
+        }else{
+
+            $cart->Product()->attach($productid,["quantity"=>1]);
+            //return redirect(route("client.wishlist"));
+            return view("categories.wishlist",["wlproducts"=>$wlproducts]);
+
+        }
+
+
+    }
 }
