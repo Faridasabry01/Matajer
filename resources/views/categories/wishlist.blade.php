@@ -30,7 +30,7 @@
                               <th class="text-left">Name</th>
 
                               <th class="hidden text-right md:table-cell"> Add to cart</th>
-                              <th class="hidden text-right md:table-cell"> Remove </th>
+                              <th class="hiddenn text-right md:table-cell"> Remove </th>
                             </tr>
                           </thead>
                           <tbody>
@@ -54,7 +54,15 @@
                               <td class="hidden text-right md:table-cell">
                                 <form action="{{ route('client.get.cart') }}" method="POST">
                                   @csrf
-                                  <button class="px-4 py-2 text-black ">Add to cart</button>
+                                  <a class="addToCart p-2" href="{{route("client.post.cart",$product->id)}}">Add to Cart </a>
+                                  
+                              </form>
+
+                              </td>
+                              <td class="hiddenn text-right md:table-cell">
+                                <form action="{{ route('client.get.cart') }}" method="POST">
+                                  @csrf
+                                  
                                   <button class="px-4 py-2 text-white bg-red-600">x</button>
                               </form>
 
