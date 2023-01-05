@@ -43,7 +43,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/favourite/{id}',[ProductController::class, 'favouriteProduct'])->name("favourite.product");
     Route::get('/cart', [HomeController::class,'getCart'])->name("client.get.cart");
     Route::get('/addToCart/{productid}', [HomeController::class,'addToCart'])->name("client.post.cart");
-    Route::get('/wishlist/{id}', [HomeController::class, 'wishlist'])->name('client.wishlist');
+    Route::get('/wishlist', [HomeController::class, 'wishlist'])->name('client.wishlist');
 
 });
 

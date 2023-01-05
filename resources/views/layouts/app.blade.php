@@ -11,15 +11,17 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-        <!-- Scripts -->        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- Scripts -->
         <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
         <script src="{% static 'network/functions.js' %}"></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased" >
         <div class="">
-            @include("auth.navbar")
+            {{-- @include("auth.navbar") --}}
+            @include("categories.navbar_test")
 
             {{-- @include('layouts.navigation') --}}
 
@@ -44,7 +46,7 @@
                     </x-dropdown-link>
                 </form>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{route("client.wishlist",Auth::user()->id)}}"><img src="/storage/navbar/Heart-icon.png"> </a>
+                    <a class="nav-link active" aria-current="page" href="{{route("client.wishlist")}}"><img src="/storage/navbar/Heart-icon.png"> </a>
                   </li>
                @yield("content")
             </main>

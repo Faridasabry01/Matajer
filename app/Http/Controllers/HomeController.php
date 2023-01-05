@@ -42,7 +42,7 @@ class HomeController extends Controller
 
 
     }
-    public function wishlist($userid)
+    public function wishlist()
     {
         $user=Auth::user();
         $wlproducts=$user->favorite(Product::class);

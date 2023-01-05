@@ -27,8 +27,8 @@
             <a class="nav-link active" aria-current="page" href="Matajer.html">Home</a>
           </li>
 
-          {{-- <li class="nav-item"> --}}
-            {{-- <ol class="login-nav"> --}}
+          <li class="nav-item">
+            <ol class="login-nav">
            @guest
            @if (Route::currentRouteName()=="login")
            <li>
@@ -41,9 +41,9 @@
            @endif
 
            @endguest
-            {{-- <a class="nav-link active" aria-current="page" href="joinUs.html">Join Us </a> --}}
-          {{-- </li> --}}
-        {{-- </ol> --}}
+            <a class="nav-link active" aria-current="page" href="joinUs.html">Join Us </a> --}}
+          </li>
+         </ol>
 
           @auth
           <li class="nav-item">
@@ -109,23 +109,9 @@
     </a>
 
     </div>
-    <!-- Avatar
 
 
-    <div class="btn-group">
-            <button type="button" class="btn btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Categories</span>
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="HairCare.html">Haircare</a>
-                <a class="dropdown-item" href="cosmetics.html">Cosmetics</a>
-                <a class="dropdown-item" href="medicalCare.html">Healthcare</a>
-                <a class="dropdown-item" href="SkinCare.html">Skincare</a>
-            </div>
-          </div>
-
-    -->
-    {{-- <ol class="login-nav">
+    <ol class="login-nav">
 
 
         @if (Route::currentRouteName()=="login")
@@ -134,7 +120,11 @@
         <li><a class="btn btn-primary" href="{{ route("login") }}"></a></li>
 
 
-        @endif--}}
+        @endif
+    </ol>
+
+
+
 
 {{-- @dd(Route::currentRouteName()) --}}
 

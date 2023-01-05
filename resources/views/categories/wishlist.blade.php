@@ -9,7 +9,7 @@ dd($user->favorite(Product::class););
 
      <div class="col-md-12">
 
-         <div class="card">
+         <div class="cardwl">
        <div class="card-header">
        <h5 style="font-size: 30px;"> <b>Your Wishlist</b></h5>
        </div>
@@ -29,7 +29,7 @@ dd($user->favorite(Product::class););
                             <tr class="h-12 uppercase">
                               <th class="hidden md:table-cell"></th>
                               <th class="text-left">Name</th>
-                             
+
                               <th class="hidden text-right md:table-cell"> price</th>
                               <th class="hidden text-right md:table-cell"> Add to cart </th>
                             </tr>
@@ -39,23 +39,25 @@ dd($user->favorite(Product::class););
                             <tr>
                               <td class="hidden pb-4 md:table-cell">
                                 <a href="#">
-                                  <img src="{{ $item->attributes->image }}" class="w-20 rounded" alt="Thumbnail">
+                                  <img src="{{ $wlproducts->image }}" class="w-20 rounded" alt="Thumbnail">
                                 </a>
                               </td>
                               <td>
                                 <a href="#">
                                   <p class="mb-2 md:ml-4">{{ $wlproducts->name }}</p>
-                                  
+
+
                                 </a>
+                                <span>price:{{ $wlproducts->price }}</span>
                               </td>
                               <td class="justify-center mt-6 md:justify-end md:flex">
                                 <div class="h-10 w-28">
                                   <div class="relative flex flex-row w-full h-8">
-                                    
+
                                     <form action="{{ route('client.wishlist') }}" method="POST">
                                       @csrf
                                       <input type="hidden" name="id" value="{{ $wlproducts->name}}" >
-                                   
+
                                     class="w-6 text-center bg-gray-300" />
                                     <button type="submit" class="px-2 pb-2 ml-2 text-white bg-blue-500">update</button>
                                     </form>
@@ -73,17 +75,17 @@ dd($user->favorite(Product::class););
                                   <input type="hidden" value="{{ $wlproducts->id }}" name="id">
                                   <button class="px-4 py-2 text-white bg-red-600">x</button>
                               </form>
-                                
+
                               </td>
                             </tr>
                             @endforeach
-                             
+
                           </tbody>
                         </table>
                         <div>
-                         
+
                         </div>
-                        
+
 
 
                       </div>
