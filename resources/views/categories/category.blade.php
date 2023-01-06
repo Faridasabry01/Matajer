@@ -4,7 +4,7 @@
 @section("content")
 
 
-<div class="bg-white shadow">
+<div class="bg-white shadow" style="background-color: red">
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
        @foreach ($categories as $category )
        <span class="font-semibold text-xl text-gray-800 leading-tight px-2 ">

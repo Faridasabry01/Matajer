@@ -1,6 +1,7 @@
 @extends("layouts.guest")
 
 
+
 @section("content")
 
 {{-- <div class="container mt-5">
