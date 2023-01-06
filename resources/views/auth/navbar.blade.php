@@ -1,7 +1,7 @@
 
- <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="padding-top:0px">
+ <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="padding:0px">
     <!-- Container wrapper -->
-<div class="container-fluid"  style="height:100%; background-color: rgba(0, 0, 0, 0.877)">
+<div class="container-fluid topnav"  style="height:100%; background-color: rgba(0, 0, 0, 0.877)">
       <!-- Toggle button -->
       <button
         class="navbar-toggler"
@@ -16,24 +16,21 @@
       </button>
 
       <!-- Collapsible wrapper -->
-    <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarCenteredExample" style="color: white;"
-      >
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample" style="color: white;">
       <a  href="{{route("client.get.home")}}"id="matajer"><img src="{{asset('images/logotransparent.svg')}}" style="width: 40px; "></a>
         <!-- Left links -->
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route("client.get.home")}}client.get.home" style="color: white;font-size:20px;">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{route("client.get.home")}}" style="color: white;font-size:20px;">Home</a>
           </li>
            @guest
            @if (Route::currentRouteName()=="login")
-           <li>
-               <a class="nav-link active" aria-current="page" href="{{ route("register") }}"> Register</a>
+           <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="{{ route("register") }}" style="color: white;font-size:20px;"> Register</a>
            </li>
            @else
-           <li>
-               <a class="nav-link active" aria-current="page" href="{{ route("login") }}"> Login</a>
+           <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="{{ route("login") }}" style="color: white;font-size:20px;"> Login</a>
            </li>
            @endif
 
@@ -43,39 +40,15 @@
 
             <li class="nav-item">
               {{-- <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a> --}}
-              <a class="nav-link active" href="{{route("client.get.cart")}}"><i class="fas fa-shopping-cart" style="font-size:28px; color: rgb(255, 255, 255)"></i></a>
+              <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}"><i class="fas fa-shopping-cart" style="font-size:28px; color: rgb(255, 255, 255)"></i></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{route("client.wishlist")}}"><i class="fa fa-heart" style="font-size:28px; color:rgb(255, 0, 85);"></i> </a>
-              </li>
-            </ul>
+            </li>
+        </ul>
 
 
-            <ul style="margin-bottom:0em">
-                <li style="color:black; align:right;">
 
-                    <a class="nav-link dropdown-toggle inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        {{ Auth::user()->name }}
-                    </a>
-
-                    {{-- <div class="sm:flex sm:items-center sm:ml-6"> --}}
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{route('profile.edit')}}">{{ __('Profile') }}</a></li>
-                        <li>
-                            <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-
-                            <a class="dropdown-item" href="{{route('logout')}}"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                {{ __('Log Out') }}
-                            </a>
-                            </form>
-                        </li>
-                    </ul>
-                {{-- </div> --}}
-                </li>
-            </ul>
 
          <!-- Settings Dropdown -->
             {{-- <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -125,36 +98,35 @@
         <!-- Left links -->
     </div>
       <!-- Right elements -->
+      @auth
+
+
         <div class="d-flex align-items-center">
-        <!-- Icon -->
-        {{-- @auth
-        <a class="text-reset me-3" href="{{route("client.get.cart")}}">
-        <i class="fas fa-shopping-cart" style="font-size:28px; color: rgb(206, 65, 89)"></i>
-        </a>
 
-        @endauth --}}
+                <div style="color:black; align:right;">
 
+                    <a class="nav-link dropdown-toggle inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ Auth::user()->name }}
+                    </a>
+
+                    {{-- <div class="sm:flex sm:items-center sm:ml-6"> --}}
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{route('profile.edit')}}">{{ __('Profile') }}</a></li>
+                        <li>
+                            <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <a class="dropdown-item" href="{{route('logout')}}"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
         </div>
-
-
-    {{-- <ol class="login-nav">
-
-
-        @if (Route::currentRouteName()=="login")
-        <li><a class="btn btn-primary" href="{{ route("register") }}">Register</a></li>
-        @else
-        <li><a class="btn btn-primary" href="{{ route("login") }}"></a></li>
-
-
-        @endif
-    </ol> --}}
-
-
-
-
-    {{-- @dd(Route::currentRouteName()) --}}
-
-    {{-- </ol>  --}}
+        @endauth
 
 
 </div>

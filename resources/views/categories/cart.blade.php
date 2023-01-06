@@ -3,11 +3,11 @@
 
 @section("content")
 
-<div class="bg-white shadow" style="background-color: red">
-    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+<div class="bg-transparent shadow" style="height:2.5em">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center" style="background-color: rgba(99, 92, 99, 0.411); height:100%;">
        @foreach ($categories as $category )
        <span class="font-semibold text-xl text-gray-800 leading-tight px-2 ">
-        <a href="{{route("category.show",$category)}}">{{ $category->name }}</a>
+        <a style="color:rgba(255, 255, 255, 0.849);font-size:18px" href="{{route("category.show",$category)}}">{{ $category->name }}</a>
     </span>
        @endforeach
     </div>
