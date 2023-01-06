@@ -44,26 +44,31 @@
               <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist",Auth::user()->id)}}"><i class="fa fa-heart" style="font-size:28px; color:rgb(161, 43, 146);"></i> </a>
+                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist")}}"><i class="fa fa-heart" style="font-size:28px; color:rgb(161, 43, 146);"></i> </a>
               </li>
             <li>
+
                 <a class="nav-link dropdown-toggle inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     {{ Auth::user()->name }}
                 </a>
+                <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="route('profile.edit')">  {{ __('Profile') }}</a></li>
+
+                    <li><a class="dropdown-item" href="{{route('profile.edit')}}">{{ __('Profile') }}</a></li>
                     <li>
                         <form method="POST" action="{{ route('logout') }}">
                         @csrf
 
-                        <x-dropdown-link :href="route('logout')"
+                        <a href="route('logout')"
                                 onclick="event.preventDefault();
                                             this.closest('form').submit();">
                             {{ __('Log Out') }}
-                        </x-dropdown-link>
+                        </a>
                         </form>
                     </li>
+                </div>
                 </ul>
+
             </li>
         </ul>
          <!-- Settings Dropdown -->
@@ -151,3 +156,4 @@
 {{-- </div> --}}
     <!-- Container wrapper -->
 </nav>
+

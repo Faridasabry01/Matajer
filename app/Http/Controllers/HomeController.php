@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Cart;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Category;
 
 class HomeController extends Controller
 {
@@ -21,7 +22,7 @@ class HomeController extends Controller
 
     public function addToCart($productid)
     {
-
+        $categories = Category::all();
         $product = Product::find($productid);
         $cart = Auth::user()->cart;
         if (!$cart) {
@@ -32,18 +33,22 @@ class HomeController extends Controller
 
             ]);
             $cart->Product()->attach($productid,["quantity"=>1]);
-            return redirect(route("product.show",$productid));
+            return redirect(route("product.show",$productid,["categories"=>$categories]));
 
         }else{
 
             $cart->Product()->attach($productid,["quantity"=>1]);
-            return redirect(route("product.show",$productid));
+            return redirect(route("product.show",$productid,["categories"=>$categories]));
         }
 
 
     }
+
+    // $categories = Category::all();
+    // return view("categories.product",["categories"=>$categories,"product"=>$product]);
     public function wishlist()
     {
+        $categories = Category::all();
         $user=Auth::user();
         $wlproducts=$user->favorite(Product::class);
 
@@ -52,7 +57,9 @@ class HomeController extends Controller
     }
     public function addToCartWL($productid)
     {
-
+        $categories = Category::all();
+        $user=Auth::user();
+        $wlproducts=$user->favorite(Product::class);
         $product = Product::find($productid);
         $cart = Auth::user()->cart;
         if (!$cart) {
@@ -64,13 +71,13 @@ class HomeController extends Controller
             ]);
             $cart->Product()->attach($productid,["quantity"=>1]);
              //return redirect(route("client.wishlist"));
-             return view("categories.wishlist",["wlproducts"=>$wlproducts]);
+             return view("categories.wishlist",["categories"=>$categories,"wlproducts"=>$wlproducts]);
 
         }else{
 
             $cart->Product()->attach($productid,["quantity"=>1]);
             //return redirect(route("client.wishlist"));
-            return view("categories.wishlist",["wlproducts"=>$wlproducts]);
+            return view("categories.wishlist",["categories"=>$categories,"wlproducts"=>$wlproducts]);
 
         }
 
