@@ -1,7 +1,7 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="padding-top:0px">
     <!-- Container wrapper -->
-<div class="container-fluid">
+<div class="container-fluid"  style="height:100%; background-color: rgba(0, 0, 0, 0.877)">
       <!-- Toggle button -->
       <button
         class="navbar-toggler"
@@ -18,13 +18,13 @@
       <!-- Collapsible wrapper -->
     <div
         class="collapse navbar-collapse justify-content-center"
-        id="navbarCenteredExample"
+        id="navbarCenteredExample" style="color: white;"
       >
       <a  href="{{route("client.get.home")}}"id="matajer"><img src="{{asset('images/logotransparent.svg')}}" style="width: 40px; "></a>
         <!-- Left links -->
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route("client.get.home")}}client.get.home">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{route("client.get.home")}}client.get.home" style="color: white;font-size:20px;">Home</a>
           </li>
            @guest
            @if (Route::currentRouteName()=="login")
@@ -40,37 +40,43 @@
            @endguest
 
           @auth
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a>
+              {{-- <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a> --}}
+              <a class="nav-link active" href="{{route("client.get.cart")}}"><i class="fas fa-shopping-cart" style="font-size:28px; color: rgb(255, 255, 255)"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist")}}"><i class="fa fa-heart" style="font-size:28px; color:rgb(161, 43, 146);"></i> </a>
+                <a class="nav-link active" aria-current="page" href="{{route("client.wishlist")}}"><i class="fa fa-heart" style="font-size:28px; color:rgb(255, 0, 85);"></i> </a>
               </li>
-            <li>
+            </ul>
 
-                <a class="nav-link dropdown-toggle inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {{ Auth::user()->name }}
-                </a>
-                <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <ul class="dropdown-menu">
 
-                    <li><a class="dropdown-item" href="{{route('profile.edit')}}">{{ __('Profile') }}</a></li>
-                    <li>
-                        <form method="POST" action="{{ route('logout') }}">
-                        @csrf
+            <ul style="margin-bottom:0em">
+                <li style="color:black; align:right;">
 
-                        <a href="route('logout')"
-                                onclick="event.preventDefault();
-                                            this.closest('form').submit();">
-                            {{ __('Log Out') }}
-                        </a>
-                        </form>
-                    </li>
-                </div>
-                </ul>
+                    <a class="nav-link dropdown-toggle inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ Auth::user()->name }}
+                    </a>
 
-            </li>
-        </ul>
+                    {{-- <div class="sm:flex sm:items-center sm:ml-6"> --}}
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{route('profile.edit')}}">{{ __('Profile') }}</a></li>
+                        <li>
+                            <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <a class="dropdown-item" href="{{route('logout')}}"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </a>
+                            </form>
+                        </li>
+                    </ul>
+                {{-- </div> --}}
+                </li>
+            </ul>
+
          <!-- Settings Dropdown -->
             {{-- <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
@@ -121,12 +127,12 @@
       <!-- Right elements -->
         <div class="d-flex align-items-center">
         <!-- Icon -->
-        @auth
+        {{-- @auth
         <a class="text-reset me-3" href="{{route("client.get.cart")}}">
-        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-shopping-cart" style="font-size:28px; color: rgb(206, 65, 89)"></i>
         </a>
 
-        @endauth
+        @endauth --}}
 
         </div>
 
