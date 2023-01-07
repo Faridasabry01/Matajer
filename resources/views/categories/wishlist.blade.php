@@ -80,6 +80,9 @@
 
                               </td>
                             </tr>
+
+                                {{Auth::user()->addFavorite($product);}}
+
                             @endforeach
 
                           </tbody>

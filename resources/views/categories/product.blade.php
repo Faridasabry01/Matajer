@@ -29,9 +29,11 @@
 serial number: {{$product->id}}
 Brand: {{$product->brand}}       Size: {{$product->size}}   Expires at: {{$product->expires_at}}
 <h5 style="font-size:24px"><strong>price: {{$product->price}} EGP </strong></h5>
-<form action="">quantity: <input type="number" id="quantity" style="width:3.5em;"></form>
-<a class="addToCart p-2" href="{{route("client.post.cart",$product->id)}}">Add to Cart</a>
+<form action="{{route('client.post.cart',$product->id)}}" method="get">
+quantity: <input name="quantity" min="1" type="number" value="1" id="quantity" style="width:3.5em;">
 
+<button  type="submit"name="addtocart"class="addToCart p-2">Add to Cart</button> {{-- href="{{route("client.post.cart",$product->id)}}"--}}
+</form>
 <div><strong>description:<strong></div>
 {{$product->desc}}
 
