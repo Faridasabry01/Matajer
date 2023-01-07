@@ -54,7 +54,7 @@ class ProductController extends Controller
     {
         $categories = Category::all();
         //$product = Product::all();
-        return view("categories.product",["categories"=>$categories,"product"=>$product]);
+        return view("categories.product", ["categories" => $categories, "product" => $product]);
     }
 
     /**
@@ -98,7 +98,7 @@ class ProductController extends Controller
         if ($product) {
             $user = Auth::user();
             $user->toggleFavorite($product);
-            return redirect(route("product.show",$id));
+            return redirect()->back();
         }
     }
 }

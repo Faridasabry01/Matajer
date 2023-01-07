@@ -8,15 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Cart extends Model
 {
     use HasFactory;
-    protected $fillable = ['total_price','num_of_items',"user_id"];
+    protected $fillable = ['total_price', 'num_of_items', "user_id"];
 
     public function Product()
     {
-        return $this->belongsToMany(Product::class,'cart_product')->withPivot(["id","product_id","quantity"]);
-
+        return $this->belongsToMany(Product::class, 'cart_product')->withPivot("id", "product_id", "cart_id", "quantity");
     }
     public function user()
     {
-        return $this->belongsTo(User::class,"user_id");
+        return $this->belongsTo(User::class, "user_id");
     }
 }

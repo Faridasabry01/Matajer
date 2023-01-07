@@ -1,10 +1,9 @@
-@extends("layouts.guest")
+@extends('layouts.guest')
 
 
 
-@section("content")
-
-{{-- <div class="container mt-5">
+@section('content')
+    {{-- <div class="container mt-5">
     <div class="row d-flex justify-content-center">
         <div class="col-md-6">
             <form method="POST" action="{{ route('login') }}">
@@ -29,7 +28,7 @@
     </div>
 </div> --}}
 
-{{-- <div class="container mt-5">
+    {{-- <div class="container mt-5">
     <div class="row d-flex justify-content-center">
         <div class="col-md-6">
             <form method="POST" action="{{ route('login') }}">
@@ -51,30 +50,27 @@
     </div>
 </div> --}}
 
-<div class="row d-flex justify-content-center"style="margin-bottom:30em">
-   <form method="POST" action="{{ route('login') }}">
-    @csrf
-    <div class="body_signin">
-    <div style="padding:0em; max-width:100%; width:100%" class="container" onclick="onclick">
-        <div class="top"  ></div>
-        <div class="bottom" ></div>
-        <div class="center">
-          <h2>Please Sign In</h2>
-          <input name="email" type="email" placeholder="email"/>
-          <x-input-error :messages="$errors->get('email')" class="mt-2" />
-          <input name="password" type="password" placeholder="password"/>
-          <input   style="border-radius: 10px;" class="button_input"type="submit" />
-          <h2>&nbsp;</h2>
-        </div>
+    <div class="row d-flex justify-content-center"style="margin-bottom:30em">
+        <form method="POST" action="{{ route('login') }}">
+            @csrf
+            <div class="body_signin">
+                <div style="padding:0em; max-width:100%; width:100%" class="container" onclick="onclick">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                    <div class="center">
+                        <h2>Please Sign In</h2>
+                        <input name="email" type="email" placeholder="email" />
+                        <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                        <input name="password" type="password" placeholder="password" />
+                        <input style="border-radius: 10px;" class="button_input"type="submit" />
+                        <h2>&nbsp;</h2>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-    </div>
-    </form>
-</div>
-
-
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" href={{ asset('css/login.css')}}>
+    <link rel="stylesheet" href={{ asset('css/login.css') }}>
 @endpush
-
