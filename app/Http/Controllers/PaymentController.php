@@ -17,15 +17,15 @@ class PaymentController extends Controller
      */
 
 
-     public function checkout()
-     {
+    public function checkout()
+    {
         return view("categories.payment");
-     }
+    }
 
-     public function payment(Request $request)
-     {
+    public function payment(Request $request)
+    {
         dd($request->all());
-     }
+    }
 
 
 

@@ -29,14 +29,14 @@
 
                         <div class="thecarddetails">
                             {{-- <form action="" onsubmit="check()"> --}}
-                            Card Number <input type="text" id="cardnum" class="form-control"
-                                placeholder="0000-0000-0000-0000" required> <br>
-                            EXP <input type="text" maxlength=5 class="form-control" id="exp" placeholder="07-09"
-                                required><br>
-                            CVV <input type="text" maxlength=3 class="form-control" id="cvv" placeholder="523"
-                                required><br>
-                            Cardholder Name <input class="form-control" onclick="checkname()" type="text" id="name"
-                                placeholder="John Adams" required>
+                            Card Number <input type="text" id="cardnum" name="card_number" class="form-control"
+                                placeholder="0000-0000-0000-0000"> <br>
+                            EXP <input type="text" maxlength=5 name="exp" class="form-control" id="exp"
+                                placeholder="07-09"><br>
+                            CVV <input type="text" maxlength=3 name="cvv" class="form-control" id="cvv"
+                                placeholder="523"><br>
+                            Cardholder Name <input name="card_holder_name" class="form-control" type="text"
+                                id="name" placeholder="John Adams">
                             {{-- <input type="submit" class="paybutton" value="Save"> --}}
 
 
@@ -47,7 +47,7 @@
 
                     <div class="address">
                         <p class="billingadress">Billing address</p>
-                        <select class="form-control-select" aria-label="Default select example">
+                        <select class="form-control-select" name="address" aria-label="Default select example">
                             <option selected hidden>Alexandria</option>
                             <option value="1">Cairo</option>
                             <option value="2">Giza</option>
@@ -57,12 +57,12 @@
                         </select>
                         <div class="d-flex">
 
-                            <input class="form-control zip" type="text" placeholder="street">
-                            <input class="form-control state" id="bnum" type="text" maxlength=3
-                                placeholder="buildingNo" onclick="checkaddr()" required>
+                            <input class="form-control zip" name="street" type="text" placeholder="street">
+                            <input class="form-control state" name="building_no" id="bnum" type="text" maxlength=3
+                                placeholder="buildingNo" required>
                         </div>
                     </div>
-                <div>
+                    <div>
                         <div>
                             <h6 class="order"><b>Order recap</b></h6>
                             <table>
@@ -87,14 +87,14 @@
                             </table>
                         </div>
                         <button type="submit" class="paybutton" value="Place your order"></button>
-                    </form>
-                </div>
-
-
+                </form>
             </div>
 
-            {{-- </div> --}}
+
         </div>
+
+        {{-- </div> --}}
+    </div>
     </div>
 
     <script>
