@@ -84,27 +84,27 @@ class HomeController extends Controller
         $wlproducts = $user->favorite(Product::class);
         return view("categories.wishlist", ["categories" => $categories, "wlproducts" => $wlproducts]);
     }
-    public function addToCartWL($productid)
-    {
-        $categories = Category::all();
-        $user = Auth::user();
-        $wlproducts = $user->favorite(Product::class);
-        $product = Product::find($productid);
-        $cart = Auth::user()->cart;
-        if (!$cart) {
-            $cart = Cart::create([
-                "user_id" => Auth::user()->id,
-                'total_price' => 0, 'num_of_items' => 0
+    // public function addToCartWL($productid)
+    // {
+    //     $categories = Category::all();
+    //     $user = Auth::user();
+    //     $wlproducts = $user->favorite(Product::class);
+    //     $product = Product::find($productid);
+    //     $cart = Auth::user()->cart;
+    //     if (!$cart) {
+    //         $cart = Cart::create([
+    //             "user_id" => Auth::user()->id,
+    //             'total_price' => 0, 'num_of_items' => 0
 
-            ]);
-            $cart->Product()->attach($productid, ["quantity" => 1]);
-            //return redirect(route("client.wishlist"));
-            return view("categories.wishlist", ["categories" => $categories, "wlproducts" => $wlproducts]);
-        } else {
+    //         ]);
+    //         $cart->Product()->attach($productid, ["quantity" => 1]);
+    //         //return redirect(route("client.wishlist"));
+    //         return view("categories.wishlist", ["categories" => $categories, "wlproducts" => $wlproducts]);
+    //     } else {
 
-            $cart->Product()->attach($productid, ["quantity" => 1]);
-            //return redirect(route("client.wishlist"));
-            return view("categories.wishlist", ["categories" => $categories, "wlproducts" => $wlproducts]);
-        }
-    }
+    //         $cart->Product()->attach($productid, ["quantity" => 1]);
+    //         //return redirect(route("client.wishlist"));
+    //         return view("categories.wishlist", ["categories" => $categories, "wlproducts" => $wlproducts]);
+    //     }
+    // }
 }

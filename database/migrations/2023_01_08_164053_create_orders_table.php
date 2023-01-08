@@ -13,19 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('payments', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->float("total_price");
-            $table->timestamps();
-            $table->integer("card_number");
-            $table->integer("expdate");
-            $table->integer("cvv");
-            $table->string('Cardholdername');
-            $table->string('address');
-            $table->string('city');
-            $table->integer("buildingNum");
+            $table->unsignedBigInteger("payment_id");
+            $table->foreign("payment_id")->references('id')->on("payments");
             $table->unsignedBigInteger("user_id");
             $table->foreign("user_id")->references('id')->on("users");
+            $table->float("total_price");
+            $table->integer("num_of_items");
+            $table->timestamps();
         });
     }
 
@@ -36,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payments');
+        Schema::dropIfExists('orders');
     }
 };

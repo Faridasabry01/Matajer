@@ -60,6 +60,8 @@
                                             <hr>
                                         @endforeach
                                         <h6 class=”Action”>Remove all</h6>
+
+                                        <a href="{{route("client.checkout")}}" >Checkout</a>
                                     </div>
                                 @endif
 

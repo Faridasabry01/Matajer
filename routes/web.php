@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
+
 
 
 
@@ -44,6 +46,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/cart', [HomeController::class, 'getCart'])->name("client.get.cart");
     Route::post('/addToCart', [HomeController::class, 'addToCart'])->name("client.post.cart");
     Route::get('/wishlist', [HomeController::class, 'wishlist'])->name('client.wishlist');
+
+    Route::get('/checkout', [PaymentController::class, 'checkout'])->name('client.checkout');
+
 
     Route::get('/addToCartWL/{productid}', [HomeController::class, 'addToCartWL'])->name("client.WLcart");
 });
