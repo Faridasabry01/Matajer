@@ -28,7 +28,7 @@
                     <div class="card-body cart">
                         @if (count($wlproducts) == 0)
                             <div class="col-sm-12 empty-cart-cls text-center">
-                                <img src="imagesWishlist_Aboutus\WL.png" width="130" height="130"
+                                <img src="{{asset("/storage/imagesWishlist_Aboutus/WL.png")}}" width="130" height="130"
                                     class="img-fluid mb-4 mr-3">
                                 <h3><strong>Your Wishlist is Empty</strong></h3>
                                 <h4>Looks like you have not added anything to your Wishlist. Go ahead and explore top
@@ -71,12 +71,10 @@
 
 
                                                 <td class=" text-right md:table-cell">
-                                                    {{-- <form action="{{ route('client.get.cart') }}" method="POST"> --}}
+                                                    <form action="{{ route('client.get.cart') }}" method="POST">
                                                     @csrf
-                                                    <a class="addToCart p-2"
-                                                        href="{{ route('client.WLcart', $product->id) }}">Add to Cart </a>
-
-                                                    {{-- </form> --}}
+                                                    <a class="addToCart p-2">Add to Cart </a>
+                                                 </form>
 
                                                 </td>
                                                 <td class=" text-right md:table-cell">

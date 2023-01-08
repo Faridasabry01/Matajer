@@ -84,3 +84,12 @@ body {
   border: 1px solid #ccc;
   font-family: inherit;
 }
+
+#footer {
+    background-color: white;
+    position: relative;
+    top: 30em;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+}

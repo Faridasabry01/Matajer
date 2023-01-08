@@ -26,9 +26,6 @@ class HomeController extends Controller
         $categories = Category::all();
         $cart = Auth::user()->cart;
 
-
-
-
         return view("categories.cart", ["categories" => $categories, "cart" => $cart]);
     }
 
@@ -76,41 +73,7 @@ class HomeController extends Controller
             }
         }
 
-        // $categories = Category::all();
 
-        // $cart = Auth::user()->cart;
-        // $quantity = Input::get('quantity'); //input not found
-        //$quantity=$request->quantity; //null
-        //$quantity = $request->get('quantity'); //null
-        //$quantity =$request->only('quantity'); //[]
-        //$quantity = $request->input('quantity'); //null
-        // dd($request->all()); //[]
-        //dd($quantity);
-
-        //    ==========================
-        //dd($request); //kalam keter  //dd($_REQUEST); //[] // dd($request->files); //??[]
-        // $quantity = 1;
-
-
-        // if (!$cart) {
-        //     $cart = Cart::create([
-        //         "user_id" => Auth::user()->id,
-        //         'total_price' => 0 //($product->price)*$quantity
-        //         , 'num_of_items' => 0 //$quantity
-
-        //     ]);
-        //     $cart->Product()->attach($productid, ["quantity" => $quantity]);
-        //     return redirect(route("product.show", $productid, ["categories" => $categories]));
-        // } else {
-        //     $cart->total_price = ($cart->total_price) + (($product->price) * $quantity); //msh btsm3 fl database
-        //     $cart->num_of_items = ($cart->num_of_items) + $quantity;    //msh btsm3 fl database
-
-
-
-        //     $cart->Product()->attach($productid, ["quantity" => $quantity]);
-        //     dd($cart->num_of_items);
-        //     return redirect(route("product.show", $productid, ["categories" => $categories]));
-        // }
     }
 
 
@@ -119,10 +82,6 @@ class HomeController extends Controller
         $categories = Category::all();
         $user = Auth::user();
         $wlproducts = $user->favorite(Product::class);
-        // dd($wlproducts);
-
-
-
         return view("categories.wishlist", ["categories" => $categories, "wlproducts" => $wlproducts]);
     }
     public function addToCartWL($productid)

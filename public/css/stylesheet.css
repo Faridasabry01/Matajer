@@ -128,7 +128,7 @@ button:hover {
 #footer {
     background-color: white;
     position: relative;
-    top: 16em;
+    top: 20em;
     /* position: absolute; */
     bottom: 0;
     width: 100%;
@@ -708,10 +708,10 @@ body {
 /* ===========================wishlist===================*/
 @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
-/* body {
+ /* body {
         background-color: #eee;
         font-family: 'Calibri', sans-serif !important;
-    }
+    } */
 
     .mt-100{
        margin-top:100px;
@@ -753,4 +753,4 @@ body {
     .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
         background-color: #1b485b!important;
         border-color: #c3c5cb!important;
-    } */
+    }
