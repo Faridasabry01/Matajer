@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Payment extends Model
 {
     use HasFactory;
-    protected $fillable = ['total_price','card_number','expdate','cvv','Cardholdername','city','address','buildingNum'];
+    protected $fillable = ['payment_method','card_number','expdate','cvv','Cardholdername','user_id'];
 
     public function orders()
     {

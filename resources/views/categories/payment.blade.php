@@ -48,12 +48,12 @@
                     <div class="address">
                         <p class="billingadress">Billing address</p>
                         <select class="form-control-select" name="address" aria-label="Default select example">
-                            <option selected hidden>Alexandria</option>
-                            <option value="1">Cairo</option>
-                            <option value="2">Giza</option>
-                            <option value="3">Port said</option>
-                            <option value="3">Mansoura</option>
-                            <option value="3">Ismaleila</option>
+                            <option value="Alexandria">Alexandria</option>
+                            <option value="Cairo">Cairo</option>
+                            <option value="Giza">Giza</option>
+                            <option value="Port-said">Port said</option>
+                            <option value="Mansoura">Mansoura</option>
+                            <option value="Ismaleila">Ismaleila</option>
                         </select>
                         <div class="d-flex">
 
@@ -68,25 +68,25 @@
                             <table>
                                 <tr>
                                     <td>Subtotal</td>
-                                    <td align="right"> $225</td>
+                                    <td align="right"> {{$total}} EGP</td>
                                 </tr>
                                 <tr>
                                     <td>Vat(20%)</td>
-                                    <td align="right"> $25</td>
+                                    <td align="right"> {{$total*0.2}} EGP</td>
                                 </tr>
                                 <tr>
                                     <td>Shippingfee</td>
-                                    <td align="right"> $5</td>
+                                    <td align="right"> 15 EGP</td>
                                 </tr>
                                 <tfoot>
                                     <tr>
                                         <td width="25%">Total</td>
-                                        <td align="right">$205</td>
+                                        <td align="right">{{$total*1.2 +15}} EGP</td>
                                     </tr>
                                 </tfoot>
                             </table>
                         </div>
-                        <button type="submit" class="paybutton" value="Place your order"></button>
+                        <input type="submit" class="paybutton" value="Place your order">
                 </form>
             </div>
 
@@ -98,12 +98,7 @@
     </div>
 
     <script>
-        // function display() {
-        //     var checkRadio = document.querySelector('input[name="payment_method"]:checked');
-        //     if (checkRadio != null) {
-        //         document.getElementby
-        //     }
-        // }
+
         $(document).ready(function() {
             $("#cardDetails").hide();
             $("input[name$='payment_method']").click(function() {

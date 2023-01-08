@@ -6,6 +6,8 @@ use App\Models\Payment;
 use App\Http\Requests\StorePaymentRequest;
 use App\Http\Requests\UpdatePaymentRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 
 class PaymentController extends Controller
@@ -19,7 +21,9 @@ class PaymentController extends Controller
 
     public function checkout()
     {
-        return view("categories.payment");
+        $cart = Auth::user()->cart;
+        $total=$cart->total_price;
+        return view("categories.payment",["total"=>$total]);
     }
 
     public function payment(Request $request)

@@ -15,15 +15,11 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->float("total_price");
-            $table->timestamps();
-            $table->integer("card_number");
-            $table->integer("expdate");
-            $table->integer("cvv");
-            $table->string('Cardholdername');
-            $table->string('address');
-            $table->string('city');
-            $table->integer("buildingNum");
+            $table->string("payment_method");
+            $table->integer("card_number")->nullable();
+            $table->integer("expdate")->nullable();
+            $table->integer("cvv")->nullable();
+            $table->string('Cardholdername')->nullable();
             $table->unsignedBigInteger("user_id");
             $table->foreign("user_id")->references('id')->on("users");
         });
