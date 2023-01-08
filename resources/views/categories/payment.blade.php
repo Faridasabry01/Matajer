@@ -10,8 +10,10 @@
                 <p class="paymentdetails"> <b>Payment Details</b></p>
                 <p class="paymentpara">Complete your purchase by providing your payment details.</p><br>
             </div>
+
+         <form action="{{route("client.payment")}}" method="POST">
+            @csrf
             <div>
-         <form action="">
                     <p class="paymentlabel">Please select your payment method</p>
                     <input type="radio" id="v1"  name="payment_method" value="Visa">
                     <label class="thepaymentmethod" for="v1">Visa payment</label><br>
@@ -20,7 +22,8 @@
 
             </div>
 
-            <div>
+
+            <div id="cardDetails">
                     <p class="carddetails">Card details</p>
 
                     <div class="thecarddetails">
@@ -37,6 +40,8 @@
             </div>
         </form>
         <form action="">
+            @csrf
+
                     <div class="address">
                         <p class="billingadress">Billing address</p>
                         <select class="form-control-select" aria-label="Default select example">
@@ -57,6 +62,8 @@
         </form>
         <div>
             <form action="">
+                @csrf
+
                 <div>
                     <h6 class="order"><b>Order recap</b></h6>
                     <table>
@@ -94,6 +101,19 @@
         {{-- </div> --}}
     </div>
 </div>
+
+<script>
+    function display()
+    {
+      var checkRadio=document.querySelector('input[name="payment_method"]:checked') ;
+      if(checkRadio!=null)
+      {
+        document.getElementby
+      }
+    }
+
+
+</script>
 
 
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Payment;
 use App\Http\Requests\StorePaymentRequest;
 use App\Http\Requests\UpdatePaymentRequest;
+use Illuminate\Http\Request;
+
 
 class PaymentController extends Controller
 {
@@ -19,6 +21,20 @@ class PaymentController extends Controller
      {
         return view("categories.payment");
      }
+
+     public function payment(Request $request)
+     {
+        dd($request->all());
+     }
+     public function address(Request $request)
+     {
+     }
+     public function order(Request $request)
+     {
+
+     }
+
+
     public function index()
     {
         //
