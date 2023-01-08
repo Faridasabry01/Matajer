@@ -54,8 +54,7 @@ Route::middleware('auth')->group(function () {
 
 
     Route::post('/payment', [PaymentController::class, 'payment'])->name("client.payment");
-    Route::post('/address', [PaymentController::class, 'address'])->name("client.address");
-    Route::post('/order', [PaymentController::class, 'order'])->name("client.order");
+
 });
 
 require __DIR__ . '/auth.php';

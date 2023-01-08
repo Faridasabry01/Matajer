@@ -37,15 +37,13 @@
                                 required><br>
                             Cardholder Name <input class="form-control" onclick="checkname()" type="text" id="name"
                                 placeholder="John Adams" required>
-                            <input type="submit" class="paybutton" value="Save">
+                            {{-- <input type="submit" class="paybutton" value="Save"> --}}
 
 
 
                         </div>
                     </div>
-                </form>
-                <form action="">
-                    @csrf
+
 
                     <div class="address">
                         <p class="billingadress">Billing address</p>
@@ -62,14 +60,9 @@
                             <input class="form-control zip" type="text" placeholder="street">
                             <input class="form-control state" id="bnum" type="text" maxlength=3
                                 placeholder="buildingNo" onclick="checkaddr()" required>
-                            <input type="submit" class="paybutton" value="Save Adress">
                         </div>
                     </div>
-                </form>
                 <div>
-                    <form action="">
-                        @csrf
-
                         <div>
                             <h6 class="order"><b>Order recap</b></h6>
                             <table>
@@ -93,23 +86,9 @@
                                 </tfoot>
                             </table>
                         </div>
-                        <input type="submit" class="paybutton" value="Place your order">
+                        <button type="submit" class="paybutton" value="Place your order"></button>
                     </form>
                 </div>
-
-
-                <div id="myRadioGroup">
-                    2 Cars<input type="radio" name="cars" checked="checked" value="2" />
-                    3 Cars<input type="radio" name="cars" value="3" />
-
-                    <div id="Cars2" class="desc">
-                        2 Cars Selected
-                    </div>
-                    <div id="Cars3" class="desc" style="display: none;">
-                        3 Cars
-                    </div>
-                </div>
-
 
 
             </div>

@@ -26,13 +26,7 @@ class PaymentController extends Controller
      {
         dd($request->all());
      }
-     public function address(Request $request)
-     {
-     }
-     public function order(Request $request)
-     {
 
-     }
 
 
     public function index()
