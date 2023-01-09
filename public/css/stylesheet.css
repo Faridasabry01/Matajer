@@ -1,3 +1,11 @@
+.ordersDivs{
+    background-color: #eee;
+    height: 200px;
+    width:600px ;
+    border-radius:10px ;
+}
+
+
 .icon1 {
     position: absolute;
     width: 50px;
