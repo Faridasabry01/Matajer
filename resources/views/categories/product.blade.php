@@ -49,32 +49,65 @@ quantity: <input name="quantity" min="1" type="number" value="1" id="quantity" s
             <h3 class="head">REVIEWS</h3>
         </div>
 
-        <div style="display: flex;">
-            <div class="reviewsComments">
-                <p>There are no reviews yet.</p>
-            </div>
+    <div style="display: flex; text-align:left">
+        <div class="reviewsComments">
+             @if($product->countRating() ==0)
+            <p >There are no reviews yet.</p>
+            @else
+            <p style="font-size: 20px">Reviews</p>
+            @foreach ($ratings = $product->getAllRatings($product->id) as $rate)
+            <div class=”Header” style=" border:1px;border-style:solid; border-color:black; padding-right:1em;padding-left:1em;">
+            <p>User name:{{$rate->author_id}} &nbsp;
+                 @if($rate->rating ==5)
+                    rate: Perfect
+                @elseif($rate->rating==4)
+                    rate: Good
+                 @elseif($rate->rating==3)
+                    rate: Average
+                @elseif($rate->rating==2)
+                    rate: Not that bad
+                @elseif($rate->rating==1)
+                     rate: Very Poor
+                 @endif
+                 <br>{{$rate->body}}<br></p>
 
+            </div>
+                <hr>
+
+
+            @endforeach
+            @endif
+
+        </div>
+
+        <div>
             <div>
-                <div>
-                    <h5>Review this product</h5>
-                    <form action="">
-                        <textarea id="comment" name="comment" cols="30" rows="5" aria-required="true" placeholder="Your Review">      <option value="">Rate…</option>
-                <option value="5">Perfect</option>
-                <option value="4">Good</option>
-                <option value="3">Average</option>
-                <option value="2">Not that bad</option>
-                <option value="1">Very Poor</option>
-            </select></p>
+                <h5>Review this product</h5>
+                <form action="{{route("client.review")}}" method="post" >
+                    @csrf
+                <pre>
+                    <input type="hidden" name="product_id" value="{{ $product->id }}">
+<label for="rating" style="color: black;">Your Rating</label> <select name="rating" id="rating">
+                    <option value="">Rate…</option>
+                    <option value="5">Perfect</option>
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Not that bad</option>
+                    <option value="1">Very Poor</option>
+                </select></p>
 <textarea id="comment" name="comment" cols="30" rows="5" aria-required="true" placeholder="Your Review"></textarea>
 
-                        <input name="submit" type="submit" id="submit" class="submit" value="Submit">
-                        </pre>
+<input name="submit" type="submit" id="submit" class="submit" value="Submit">
+                </pre>
 
-                    </form>
+                </form>
 
 
-                </div>
             </div>
         </div>
     </div>
+
+
+
+</div>
 @endsection

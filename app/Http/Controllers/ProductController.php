@@ -9,6 +9,8 @@ use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
+
 
 
 class ProductController extends Controller
@@ -50,6 +52,20 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
+    public function review(Request $request)
+    {
+        $user = Auth::user();
+        $product = Product::find($request->product_id);
+
+
+        $rating = $product->rating([
+        'body' => $request->comment,
+        'rating' => $request->rating,
+        'approved' => true,
+        ], $user);
+
+    }
+
     public function show(Product $product)
     {
         $categories = Category::all();
