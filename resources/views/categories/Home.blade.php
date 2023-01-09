@@ -11,7 +11,7 @@
     </div>
     <div class="carousel-inner" >
       <div class="carousel-item active">
-        <img style="height: 700px;"src="{{URL::asset("/storage/hpimages/skncr.jpg")}} class="d-block w-100" alt="...">
+        <img style="height: 700px;"src="{{URL::asset("/storage/hpimages/skncr.jpg")}}" class="d-block w-100" alt="...">
         <div class="pos_skincare">
           <h5  style="font-size: 40px;  color: rgba(0, 0, 0, 0.679);  " ><b> skin Care </b></h5>
           <p style="text-align: left;"> Skin care is a range of practices that support skin integrity,<br>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img style="height: 700px;"src="{{URL::asset("/storage/hpimages/cosm2.jpg")}} class="d-block w-100" alt="...">
+        <img style="height: 700px;"src="{{URL::asset("/storage/hpimages/cosm2.jpg")}}" class="d-block w-100" alt="...">
         <div class="pos_cosmetics" style="text-align: left;">
           <h5 style="font-size: 40px;  color: rgba(0, 0, 0, 0.679); " ><b>  Cosmetics </b></h5>
           <p >Cosmetics are products designed to cleanse, protect and change <br>
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img style="height: 700px;"src="{{URL::asset("/storage/hpimages/hairc.jpg")}} class="d-block w-100" alt="...">
+        <img style="height: 700px;"src="{{asset('/storage/hpimages/med4.jpg')}}" class="d-block w-100" alt="...">
         <div class="pos_haircare">
           <h5 style="  font-size: 40px; color: rgb(112, 67, 67);   "><b> Hair Care</b></h5>
           <p style="text-align:left;">Hair care is important for not only our appearance, but also for our overall hygiene.<br>
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img style="height: 700px;"src="{{URL::asset("/storage/hpimages/med4.jpg")}}" class="d-block w-100" alt="...">
+        <img style="height: 700px;"src="{{asset('/storage/hpimages/med4.jpg')}}" class="d-block w-100" alt="...">
         <div class="pos_medicine">
           <h5 style="font-size: 40px; color: rgba(0, 0, 0, 0.679);  "><b> Medicine</b></h5>
           <p style="text-align: left;">A dosage form that contains one or more active and/or inactive ingredients.<br>
@@ -60,6 +60,54 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  {{-- =========================== --}}
+
+  <h2 class="posAboveCards" style="font-family: times new roman;">GET A GLIMPSE OF WHAT WE GOT IN STOCK</h2>
+    <!-- cards -->
+      <div class="row row-cols-1 row-cols-md-4 g-1">
+        <div class="col">
+          <div  style="border: none;" class=" card h-70">
+            <img  class="cardPictureResize"src="{{asset('/storage/cardsimages/R.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">  </h5>
+              <p class="card-text"> </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div style="border: none;"class="card h-80">
+            <img class="cardPictureResize" src="{{asset('/storage/cardsimages/akincare.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> </h5>
+              <p class="card-text"> </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div  style="border: none;" class="card h-100">
+            <img class="cardPictureResize" src="{{asset('/storage/cardsimages/skincare.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> </h5>
+              <p class="card-text"> </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div  style="border: none;" class="card h-100">
+            <img class="cardPictureResize" src="{{asset('/storage/cardsimages/4854738b3c74ef8cb92b2ef485ebd705.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> </h5>
+              <p class="card-text"> </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
 
 

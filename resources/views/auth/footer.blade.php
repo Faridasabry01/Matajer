@@ -60,11 +60,9 @@
                                 <a href="#!" class="text-reset">Orders</a>
                             </p>
                             <p>
-                                <a href="Aboutus.html" class="text-reset">About Us</a>
+                                <a href="{{route("aboutus.show")}}" class="text-reset">About Us</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">Help</a>
-                            </p>
+
                         </div>
                         <!-- Grid column -->
 
@@ -80,12 +78,13 @@
                             <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
                             <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
                         </div>
+
                         <!-- Grid column -->
                     </div>
                     <!-- Grid row -->
 
                 </div>
-                <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-md-0 mb-4">
+                {{-- <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
                     <div class="social">
                         <a href="#"><i class="icon ion-social-instagram"></i></a>
@@ -93,7 +92,7 @@
                         <a href="#"><i class="icon ion-social-twitter"></i></a>
                         <a href="#"><i class="icon ion-social-facebook"></i></a>
                     </div>
-                </div>
+                </div> --}}
 
             </section>
             <!-- Section: Links  -->
@@ -103,12 +102,12 @@
                     <ul class="social-network social-circle">
                      <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook" ></i></a></li>
                      <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    
-                    </ul>		
+
+                    </ul>
                     <div class="coll-md-12 copy">
                       <p class="text-center">&copy; Copyright 2022 -Matajer.All rights reserved.</p>
                     </div>
-                       
+
             </div>
     </footer>
 </div>

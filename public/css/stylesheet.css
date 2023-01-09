@@ -1025,4 +1025,12 @@ p {
         background-size: 100% 100%;
 
     }
+  /****************************cards***************************************/
+  .cardPictureResize{
 
+    width:350px;
+    height: 400px;
+    border-radius: 5px;
+    margin: .9em;
+
+    }

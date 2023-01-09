@@ -17,6 +17,7 @@ use Illuminate\Validation\ValidationException;
 
 class HomeController extends Controller
 {
+
     public function aboutus()
     {
         return view("categories.aboutus");
