@@ -20,11 +20,13 @@ class HomeController extends Controller
 
     public function aboutus()
     {
-        return view("categories.aboutus");
+        $categories = Category::all();
+        return view("categories.aboutus",["categories" => $categories]);
     }
     public function getHomePage()
     {
-        return view("categories.Home");
+        $categories = Category::all();
+        return view("categories.Home", ["categories" => $categories]);
     }
     public function getCart()
     {

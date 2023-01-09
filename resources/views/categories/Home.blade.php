@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img style="height: 700px;"src="{{asset('/storage/hpimages/med4.jpg')}}" class="d-block w-100" alt="...">
+        <img style="height: 700px;"src="{{asset('/storage/hpimages/hairc.jpg.jpg')}}" class="d-block w-100" alt="...">
         <div class="pos_haircare">
           <h5 style="  font-size: 40px; color: rgb(112, 67, 67);   "><b> Hair Care</b></h5>
           <p style="text-align:left;">Hair care is important for not only our appearance, but also for our overall hygiene.<br>

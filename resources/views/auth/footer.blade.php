@@ -1,12 +1,12 @@
 <!----------------------------------------------------------------------------------------------->
 <!-- footer     -->
      <!-- Footer -->
-     <footer id="footer" class="thefooter">
+     <footer id="footer" class="thefooter" style="padding: 0px">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 
           <!-- Left -->
-         
+
         <!-- Section: Links  -->
         <section class="">
           <div class="container text-center text-md-start mt-5">
@@ -17,15 +17,15 @@
                 <!-- Content -->
                 <h5 class="footermatajer">
                   <i class="fas fa-gem me-3" aria-hidden="true" style="color: white"></i> <b>MATAJER</b>
-      
+
                 </h5>
                 <p class="firstfooterpara">
-                  Welcome to our online store for selling many products such as cosmetics, skincare products, 
-                  haircare products and Healthcare products.                        
+                  Welcome to our online store for selling many products such as cosmetics, skincare products,
+                  haircare products and Healthcare products.
                 </p>
               </div>
               <!-- Grid column -->
-      
+
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
@@ -46,7 +46,7 @@
                 </p>
               </div>
               <!-- Grid column -->
-      
+
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
@@ -54,21 +54,19 @@
                  <b> How can we help?</b>
                 </h6>
                 <p class="thirdcoulmnfooterpara">
-                  <a href="faqQuestions.html" class="text-reset">FAQs</a>
+                  <a href="{{route('client.wishlist')}}" class="text-reset">Wishlist</a>
                 </p>
-                
+
                 <p class="thirdcoulmnfooterpara">
-                  <a href="#!" class="text-reset">Orders</a>
-                </p>
-                <p class="thirdcoulmnfooterpara">
-                   <a href="Aboutus.html" class="text-reset">About Us</a>
+                  <a href="{{route("client.orders")}}" class="text-reset">Orders</a>
                 </p>
                 <p class="thirdcoulmnfooterpara">
-                  <a href="#!" class="text-reset">Help</a>
+                   <a href="{{route("aboutus.show")}}" class="text-reset">About Us</a>
                 </p>
+
               </div>
               <!-- Grid column -->
-      
+
               <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
@@ -83,17 +81,17 @@
               </div>
               <!-- Grid column -->
 
-                
-                           
-              
-                  
+
+
+
+
 
 
             </div>
             <!-- Grid row -->
           </div>
-          
-        
+
+
         </section>
         <!-- Section: Links  -->
         <div class="colll-md-5 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  ">
@@ -101,15 +99,15 @@
               <ul class="social-network social-circle">
                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook" ></i></a></li>
                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-              
-              </ul>		
+
+              </ul>
               <div class="coll-md-12 copy">
                 <p class="f4">&copy; Copyright 2022 -Matajer.All rights reserved.</p>
               </div>
-                 
+
       </div>
-       
-      </footer>
+
+    </footer>
       <!----------------------------------------------------------------------------------------------->
-      
+
       <!----------------------------------------------------------------------------------------------->
