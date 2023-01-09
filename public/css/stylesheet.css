@@ -126,7 +126,7 @@ button:hover {
     position: relative;
 }
 #footer {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     position: relative;
     top: 20em;
     /* position: absolute; */

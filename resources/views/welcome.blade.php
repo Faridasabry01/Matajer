@@ -149,11 +149,11 @@
                 <p>Discover Products for a life well lived.<br>
                     So let's get started to have the most unique, <br>
                     easy, fun online shopping experience.</p>
-                    <form action="">
+                    <form action="{{route('register')}}">
                         <input class="btn1" type="submit" value="Get started"/>
 
                     </form>
-                    <form action="{{ route('aboutus.show') }}" method="GET">
+                    <form action="{{ route('aboutus.show') }}" >
                          <input class="btn2" type="submit" value="About Us"/>
 
                     </form>
