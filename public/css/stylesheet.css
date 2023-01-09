@@ -1085,7 +1085,7 @@ ul.social-network {
 /************************************Profileee***********************/
 .profileheader{
     font-size: 40px;
-    color: #080808;
+    color: rgb(249, 75, 153);
     font-weight: bold;
 }
 .firstprofilepara{
@@ -1098,7 +1098,7 @@ ul.social-network {
     font-weight: bold;
 }
 .updatebutton{
-    background-color: #000;
+    background-color:rgb(240, 117, 172);
 
   border: 1;
   margin-top: 2%;
@@ -1106,7 +1106,7 @@ ul.social-network {
   width: 15%;
   padding: 2%;
   font-weight: 600;
-  color: #f7f5f5;
+  color: #000000;
   font-size: 15px;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1114,7 +1114,7 @@ ul.social-network {
 }
 .updatepasswordheader{
     font-size: 40px;
-    color: #080808;
+    color:rgb(249, 75, 153);;
     font-weight: bold;
 }
 .updatepasswordpara{
@@ -1127,7 +1127,7 @@ ul.social-network {
     font-weight: bold;
 }
 .passwordbutton{
-    background-color: #000;
+    background-color:rgb(240, 117, 172);
 
     border: 1;
     margin-top: 2%;
@@ -1135,7 +1135,7 @@ ul.social-network {
     width: 15%;
     padding: 10px 24px;;
     font-weight: 600;
-    color: #f7f5f5;
+    color: #000000;
     font-size: 15px;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1143,7 +1143,7 @@ ul.social-network {
 }
 .deleteprofile{
     font-size: 40px;
-    color: #080808;
+    color:rgb(249, 75, 153);;
     font-weight: bold;
 }
 .deletprofilepara{
@@ -1151,7 +1151,7 @@ ul.social-network {
     color: #000;
 }
 .deleteprofilebutton{
-    background-color: #000;
+    background-color:rgb(240, 117, 172);
 
     border: 1;
     margin-top: 2%;
@@ -1159,14 +1159,14 @@ ul.social-network {
     width: 15%;
     padding: 2%;
     font-weight: 600;
-    color: #f7f5f5;
+    color: #000000;
     font-size: 15px;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .areyousure{
     font-size: 30px;
-    color: #080808;
+    color: rgb(249, 75, 153);;
     font-weight: bold;
 }
 .makesure{
@@ -1174,7 +1174,7 @@ ul.social-network {
     color: #000;
 }
 .cancelbutton{
-    background-color: #000;
+    background-color:rgb(240, 117, 172);
     
     border: 1;
     margin-top: 2%;
@@ -1188,7 +1188,7 @@ ul.social-network {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .okdelete{
-    background-color: #000;
+    background-color:rgb(240, 117, 172);
     
     border: 1;
     margin-top: 2%;
