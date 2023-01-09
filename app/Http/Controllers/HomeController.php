@@ -17,7 +17,8 @@ use Illuminate\Validation\ValidationException;
 
 class HomeController extends Controller
 {
-    public function aboutus(){
+    public function aboutus()
+    {
         return view("categories.aboutus");
     }
     public function getHomePage()
@@ -75,8 +76,6 @@ class HomeController extends Controller
                 return redirect()->back();
             }
         }
-
-
     }
 
 

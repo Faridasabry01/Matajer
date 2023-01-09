@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("payment_id");
+            $table->unsignedBigInteger("payment_id")->nullable();
             $table->foreign("payment_id")->references('id')->on("payments");
             $table->unsignedBigInteger("user_id");
             $table->foreign("user_id")->references('id')->on("users");

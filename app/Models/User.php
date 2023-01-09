@@ -12,7 +12,7 @@ use ChristianKuri\LaravelFavorite\Traits\Favoriteability;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable,Favoriteability;
+    use HasApiTokens, HasFactory, Notifiable, Favoriteability;
 
     /**
      * The attributes that are mass assignable.
