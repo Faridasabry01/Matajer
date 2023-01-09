@@ -11,16 +11,16 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img  style="height: 500px;"src="imagesWishlist_Aboutus\GettyImages-1063785158.webp" class="d-block w-100" alt="...">
+        <img  style="height: 500px;"src="{{asset('/storage/hpimages/cosm.jpg')}}" class="d-block w-100" alt="...">
         <div class="pos-aboutus">
           <h1 style="font-size: 40px;  color: rgb(59, 56, 56);  " >About us</h1>
           <p></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img  style="height: 500px;"src="imagesWishlist_Aboutus\t3.jpg" class="d-block w-100" alt="...">
+        <img  style="height: 500px;"src="{{asset('/storage/hpimages/t3.jpg')}}" class="d-block w-100" alt="...">
         <div class="pos-ourteam">
-          <h1 style="font-size: 40px;  color: black;  ">Our Team</h1>
+          <h1 style="font-size: 40px;  color: black;">Our Team</h1>
           <p></p>
         </div>
       </div>
