@@ -29,21 +29,21 @@
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
                             <h6 class="text-uppercase fw-bold mb-4">
-                                <b> Categories</b>
+                             <b> Categories</b>
                             </h6>
                             <p>
-                                <a href="SkinCare.html" class="text-reset">Skincare</a>
+                              Skincare
                             </p>
                             <p>
-                                <a href="medicalCare.html" class="text-reset">HEALTHCARE</a>
+                              HEALTHCARE
                             </p>
                             <p>
-                                <a href="cosmetics.html" class="text-reset">COSMETICS</a>
+                              COSMETICS
                             </p>
                             <p>
-                                <a href="HairCare.html" class="text-reset">HAIRCARE</a>
+                              HAIRCARE
                             </p>
-                        </div>
+                          </div>
                         <!-- Grid column -->
 
                         <!-- Grid column -->
