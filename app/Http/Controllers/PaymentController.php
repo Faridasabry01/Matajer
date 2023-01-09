@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Payment;
 use App\Http\Requests\StorePaymentRequest;
 use App\Http\Requests\UpdatePaymentRequest;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,13 +23,56 @@ class PaymentController extends Controller
     public function checkout()
     {
         $cart = Auth::user()->cart;
-        $total=$cart->total_price;
-        return view("categories.payment",["total"=>$total]);
+        $total = $cart;
+        $payments = Auth::user()->payments;
+        return view("categories.payment", ["cart" => $total, "payments" => $payments]);
     }
 
     public function payment(Request $request)
     {
-        dd($request->all());
+        $request->validate([
+            "payment_method" => ["required", "string", "in:Visa,cash"],
+            "address" => ["required"],
+            "street" => ["required"],
+            "building_no" => ["required"],
+        ]);
+
+        if ($request->payment_method == "Visa") {
+            $request->validate([
+                "card_number" => ["required"],
+                "exp" => ["required"],
+                "cvv" => ["required"],
+                "card_holder_name" => ["required"],
+            ]);
+
+            $payment = Payment::create([
+                'payment_method' => "Visa",
+                'card_number' => $request->card_number,
+                'expdate' => $request->exp,
+                'cvv' => $request->cvv,
+                'Cardholdername' => $request->card_holder_name,
+                'user_id' => Auth::user()->id
+            ]);
+            $cart = Auth::user()->cart;
+
+            $order = Order::create([
+                'payment_id' => $payment->id,
+                'user_id' => Auth::user()->id,
+                'total_price' => $cart->total_price,
+                'num_of_items' => $cart->num_of_items,
+            ]);
+            return redirect()->back();
+        } else if ($request->payment_method == "cash") {
+            $cart = Auth::user()->cart;
+
+            $order = Order::create([
+                'user_id' => Auth::user()->id,
+                'total_price' => $cart->total_price,
+                'num_of_items' => $cart->num_of_items,
+            ]);
+
+            return redirect()->back();
+        }
     }
 
 

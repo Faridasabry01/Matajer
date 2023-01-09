@@ -16,12 +16,13 @@ return new class extends Migration
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->string("payment_method");
-            $table->integer("card_number")->nullable();
-            $table->integer("expdate")->nullable();
+            $table->longText("card_number")->nullable();
+            $table->string("expdate")->nullable();
             $table->integer("cvv")->nullable();
             $table->string('Cardholdername')->nullable();
             $table->unsignedBigInteger("user_id");
             $table->foreign("user_id")->references('id')->on("users");
+            $table->timestamps();
         });
     }
 
