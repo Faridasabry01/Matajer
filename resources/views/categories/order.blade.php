@@ -9,16 +9,16 @@
 
     @foreach ($orders as $order)
         <div class="d-flex">
-            <div class="">
-                <p>order number: {{ $order->id }}</p>
+            <div class="ordersDivs">
+                <b>order number:</b> {{ $order->id }}<br>
 
                     @if(isset($order->payment_id))
-                    <p>Payment method: Cash</p>
+                   <b> Payment method:</b> Cash<br>
                     @else
-                    <p>Payment method: Visa</p>
+                  <b>Payment method:</b> Visa<br>
                     @endif
-                <p>Total Price: {{ $order->total_price }}</p>
-                <p>number of items: {{ $order->num_of_items }}</p>
+               <b>Total Price:</b> {{ $order->total_price }}<br>
+              <b>number of items:</b> {{ $order->num_of_items }}<br>
             </div>
         </div>
         <hr>
