@@ -158,7 +158,7 @@
 
                     </form>
                     <form action="" >
-                        <input class="btn2" type="submit" value="login"/>
+                        <input class="btn3" type="submit" value="login"/>
 
                    </form>
 
