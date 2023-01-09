@@ -18,7 +18,14 @@ class PaymentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function orders()
+    {
+        $orders = Auth::user()->orders;
+        //dd($orders);
 
+
+        return view("categories.order",["orders" => $orders]);
+    }
 
     public function checkout()
     {
@@ -61,7 +68,8 @@ class PaymentController extends Controller
                 'total_price' => $cart->total_price,
                 'num_of_items' => $cart->num_of_items,
             ]);
-            return redirect()->back();
+            return redirect(route("client.orders"));
+
         } else if ($request->payment_method == "cash") {
             $cart = Auth::user()->cart;
 
@@ -71,7 +79,8 @@ class PaymentController extends Controller
                 'num_of_items' => $cart->num_of_items,
             ]);
 
-            return redirect()->back();
+            return redirect(route("client.orders"));
+
         }
     }
 

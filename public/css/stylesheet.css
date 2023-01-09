@@ -153,35 +153,35 @@ ul.social-network {
     margin-left: 0 !important;
     padding: 0;
   }
-  
+
   ul.social-network li {
     display: inline;
     margin: 0 5px;
   }
-  
-  
+
+
   /* footer social icons */
-  
+
   .social-network a.icoFacebook:hover {
     background-color: #3B5998;
   }
-  
+
   .social-network a.icoLinkedin:hover {
     background-color: #007bb7;
   }
-  
-  
+
+
   .social-network a.icoFacebook:hover i,
   .social-network a.icoLinkedin:hover i
    {
     color: rgb(232, 228, 228);
   }
-  
+
   .social-network a.socialIcon:hover,
   .socialHoverClass {
     color: #44BCDD;
   }
-  
+
   .social-circle li a {
     display: inline-block;
     position: relative;
@@ -194,13 +194,13 @@ ul.social-network {
     height: 30px;
     font-size: 15px;
   }
-  
+
   .social-circle li i {
     margin: 0;
     line-height: 30px;
     text-align: center;
   }
-  
+
   .social-circle li a:hover i,
   .triggeredHover {
     -moz-transform: rotate(360deg);
@@ -213,7 +213,7 @@ ul.social-network {
     -ms-transition: all 0.2s;
     transition: all 0.2s;
   }
-  
+
   .social-circle i {
     color: #454343;
     -webkit-transition: all 0.8s;
@@ -222,7 +222,7 @@ ul.social-network {
     -ms-transition: all 0.8s;
     transition: all 0.8s;
   }
-  
+
   .social-network a {
     background-color: #e4dcdc;
   }
@@ -231,7 +231,7 @@ ul.social-network {
     top:35px;
   }
   .coll-md-12{
-    position: relative; 
+    position: relative;
     top:35px;
   }
 body {
@@ -932,7 +932,7 @@ p {
   color: lightcoral;
 }
 .paymentdetails{
-  
+
     font-size: 35px;
     color: lightpink;
   }
@@ -986,7 +986,7 @@ p {
         margin: 10px auto;
     }
 
-    
+
     .box-2 {
         max-width: 600px;
         padding: 20px 90px;
@@ -997,7 +997,7 @@ p {
 
 @media (max-width:426px) {
 
-    
+
     .box-2 {
         max-width: 400px;
         padding: 20px 10px;
@@ -1008,7 +1008,7 @@ p {
     }
 }
 .landingg{
-   
+
     background-image: url("/storage/Landing_page/istockphoto-1249219777-612x612.jpg");
          /* asset("/storage/Landing_page/istockphoto-1249219777-612x612.jpg"); */
 
