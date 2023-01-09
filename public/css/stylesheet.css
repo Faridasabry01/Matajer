@@ -1177,6 +1177,43 @@ i{
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.areyousure{
+    font-size: 30px;
+    color: #080808;
+    font-weight: bold;
+}
+.makesure{
+    font-size: 20px;
+    color: #000;
+}
+.cancelbutton{
+    background-color: #000;
+    
+    border: 1;
+    margin-top: 2%;
+    border-radius: 1.5rem;
+    width: 15%;
+    padding: 2%;
+    font-weight: 600;
+    color: #f7f5f5;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.okdelete{
+    background-color: #000;
+    
+    border: 1;
+    margin-top: 2%;
+    border-radius: 1.5rem;
+    width: 15%;
+    padding: 2%;
+    font-weight: 600;
+    color: #f7f5f5;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
   /****************************cards***************************************/
   .cardPictureResize{
