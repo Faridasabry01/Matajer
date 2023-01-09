@@ -98,6 +98,17 @@
             </section>
             <!-- Section: Links  -->
 
-
+            <div class="colll-md-5 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  ">
+                <h4>Follow Us</h4>
+                    <ul class="social-network social-circle">
+                     <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook" ></i></a></li>
+                     <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    
+                    </ul>		
+                    <div class="coll-md-12 copy">
+                      <p class="text-center">&copy; Copyright 2022 -Matajer.All rights reserved.</p>
+                    </div>
+                       
+            </div>
     </footer>
 </div>

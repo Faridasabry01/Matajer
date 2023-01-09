@@ -21,19 +21,10 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style> --}}
-        <style>
-            body{
-                background-image:url({{url('/storage/Landing_page/istockphoto-1249219777-612x612.jpg')}});
-                 /* asset("/storage/Landing_page/istockphoto-1249219777-612x612.jpg"); */
-
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: 100% 100%;
-
-            }
-        </style>
+        
+            
     </head>
-    <body class="antialiased">
+    <body class="antialiased landingg">
 
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
@@ -158,11 +149,11 @@
                 <p>Discover Products for a life well lived.<br>
                     So let's get started to have the most unique, <br>
                     easy, fun online shopping experience.</p>
-                    <form action="joinUs.html">
+                    <form action="">
                         <input class="btn1" type="submit" value="Get started"/>
 
                     </form>
-                    <form action="Aboutus.html">
+                    <form action="{{ route('aboutus.show') }}" method="GET">
                          <input class="btn2" type="submit" value="About Us"/>
 
                     </form>
