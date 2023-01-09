@@ -4,6 +4,7 @@
      <footer id="footer" class="thefooter">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
           <!-- Left -->
          
         <!-- Section: Links  -->
@@ -81,6 +82,13 @@
                             <p class="f2"><i class="fas fa-print me-3" style="color: white"></i> + 01 234 567 89</p>
               </div>
               <!-- Grid column -->
+
+                
+                           
+              
+                  
+
+
             </div>
             <!-- Grid row -->
           </div>

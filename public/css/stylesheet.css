@@ -1,3 +1,11 @@
+.ordersDivs{
+    background-color: #eee;
+    height: 200px;
+    width:600px ;
+    border-radius:10px ;
+}
+
+
 .icon1 {
     position: absolute;
     width: 50px;
@@ -140,20 +148,18 @@ button:hover {
     background-color: rgba(226, 218, 207, 0.247);
     width: 100%;
 }
-ul.social-network {
-    list-style: none;
-    display: inline;
-    margin-left: 0 !important;
-    padding: 0;
-  }
-  
-  ul.social-network li {
-    display: inline;
-    margin: 0 5px;
-  }
+
+
   
   
   
+
+
+
+ 
+ 
+
+
 body {
     height: 100%;
    
@@ -224,8 +230,8 @@ body {
 }
 .reviewsComments {
     display: inline-block;
-    margin-left: 650px;
-    margin-right: 250px;
+    margin-left: 25em;
+    margin-right: 35em;
 }
 .heading {
     display: table;
@@ -852,7 +858,7 @@ p {
   color: lightcoral;
 }
 .paymentdetails{
-  
+
     font-size: 35px;
     color: lightpink;
   }
@@ -906,7 +912,7 @@ p {
         margin: 10px auto;
     }
 
-    
+
     .box-2 {
         max-width: 600px;
         padding: 20px 90px;
@@ -917,7 +923,7 @@ p {
 
 @media (max-width:426px) {
 
-    
+
     .box-2 {
         max-width: 400px;
         padding: 20px 10px;
@@ -928,7 +934,7 @@ p {
     }
 }
 .landingg{
-   
+
     background-image: url("/storage/Landing_page/istockphoto-1249219777-612x612.jpg");
          /* asset("/storage/Landing_page/istockphoto-1249219777-612x612.jpg"); */
 
@@ -937,6 +943,7 @@ p {
         background-size: 100% 100%;
 
     }
+
     /**********************************************/
     /*****************************************/
 ul.social-network {
@@ -1170,3 +1177,14 @@ i{
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+  /****************************cards***************************************/
+  .cardPictureResize{
+
+    width:350px;
+    height: 400px;
+    border-radius: 5px;
+    margin: .9em;
+
+    }
+
