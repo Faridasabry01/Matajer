@@ -311,8 +311,8 @@ body {
 }
 .reviewsComments {
     display: inline-block;
-    margin-left: 650px;
-    margin-right: 250px;
+    margin-left: 25em;
+    margin-right: 35em;
 }
 .heading {
     display: table;

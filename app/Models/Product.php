@@ -4,12 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Codebyray\ReviewRateable\Contracts\ReviewRateable;
+use Codebyray\ReviewRateable\Traits\ReviewRateable as ReviewRateableTrait;
 
 use ChristianKuri\LaravelFavorite\Traits\Favoriteable;
 
 class Product extends Model
 {
-    use HasFactory, Favoriteable;
+
+    use HasFactory, Favoriteable,ReviewRateableTrait;
 
     protected $fillable = [
         'name',
