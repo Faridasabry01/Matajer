@@ -23,7 +23,7 @@ class HomeController extends Controller
     }
     public function getHomePage()
     {
-        return view("");
+        return view("categories.Home");
     }
     public function getCart()
     {

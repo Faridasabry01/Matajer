@@ -9,15 +9,23 @@
 
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample" style="color: white;">
+            @guest
             <a href="{{ route('landing') }}"id="matajer"><img src="{{ asset('images/logotransparent.svg') }}"
-                    style="width: 40px; "></a>
+                style="width: 40px; "></a>
+            @endguest
+            @auth
+            <a href="{{ route('client.get.home') }}"id="matajer"><img src="{{ asset('images/logotransparent.svg') }}"
+                style="width: 40px; "></a>
+            @endauth
+
             <!-- Left links -->
             <ul class="navbar-nav mb-2 mb-lg-0">
+
+                @guest
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ route('landing') }}"
                         style="color: white;font-size:20px;">Home</a>
                 </li>
-                @guest
                     @if (Route::currentRouteName() == 'login')
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="{{ route('register') }}"
@@ -33,6 +41,10 @@
                 @endguest
 
                 @auth
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ route('client.get.home') }}"
+                        style="color: white;font-size:20px;">Home</a>
+                </li>
 
                     <li class="nav-item">
                         {{-- <a class="nav-link active" aria-current="page" href="{{route("client.get.cart")}}">My Cart</a> --}}
