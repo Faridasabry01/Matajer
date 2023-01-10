@@ -35,29 +35,14 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="">
+
         @include('auth.navbar')
-        {{-- @include("categories.navbar_test") --}}
-
-
-        {{-- @include('layouts.navigation') --}}
-
-        <!-- Page Heading -->
-        {{-- @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif --}}
-
-        <!-- Page Content -->
         <main>
-
             @yield('content')
         </main>
         @include('auth.footer')
-    </div>
+
+
     <script src="./js/jquery-1.9.1.js"></script>
     <!--script rakam 1000-->
     <script src="./js/bootstrap-dropdown.js"></script>

@@ -255,9 +255,10 @@ button:hover {
 /* end */
 /* ---------------------------------------------------------------------- */
 /*-------account------------*/
-body {
-    /* height: 100%; */
+html,body {
+    height: 100%;
     background-color: white;
+
 }
 .emp-profile {
     padding: 3%;
@@ -936,6 +937,7 @@ p {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
+        margin: 0px;
 
     }
 
@@ -1218,4 +1220,16 @@ ul.social-network {
     margin: .9em;
 
     }
+
+    /* =============================== */
+    #loader {
+        /* background-image: url("/storage/Landing_page/load.gif");
+        background-repeat: no-repeat; */
+
+        width: 100%;
+        height: 100%;
+        position:absolute;
+
+    }
+
 
