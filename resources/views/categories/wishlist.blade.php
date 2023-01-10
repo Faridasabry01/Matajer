@@ -40,7 +40,7 @@
 
                             </div>
                         @else
-                            <div class="flex-1">
+                            {{-- <div class="flex-1">
                                 <table class="w-full text-sm lg:text-base" cellspacing="0">
                                     <thead>
                                         <tr class="h-12 uppercase">
@@ -51,8 +51,34 @@
                                             <th class="hiddenn text-right md:table-cell"> Remove </th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        @foreach ($wlproducts as $product)
+                                    <tbody> --}}
+                                        <div class=”Header”>
+
+                                            @foreach ($wlproducts as $product)
+                                                <div class="d-flex">
+                                                    <img src="{{ $product->image }}" width="200" height="200">
+                                                    <div>
+                                                        <p>Product name: {{ $product->name }}</p>
+                                                        <div class="d-flex">
+                                                            <div style="display: inline-flexbox; margin-right:2em;">Price: {{ $product->price }}</div>
+                                                            <div style="display: inline-flexbox">
+                                                            <form action="{{ route('client.post.cart') }}" method="POST">
+                                                            @csrf
+                                                            <button  type="submit"class="addToCart" style="height:2em; width:6em;">Add to Cart</button>
+                                                        </form>
+                                                    </div>
+                                                        <div style="display: inline-flexbox"s><a href="{{ route('favourite.product', $product->id) }}"class="px-4 py-2  bg-red-600" style="color: black">&#x2718;</a></div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                            @endforeach
+
+                                        </div>
+                                        {{-- @foreach ($wlproducts as $product)
+
                                             <tr>
                                                 <td class="hidden pb-4 md:table-cell">
                                                     <a href="#">
@@ -85,11 +111,11 @@
                                                 </td>
                                             </tr>
 
-                                        @endforeach
+                                        @endforeach --}}
 
-                                    </tbody>
+                                    {{-- </tbody>
                                 </table>
-                                <div>
+                                <div> --}}
 
                                 </div>
 

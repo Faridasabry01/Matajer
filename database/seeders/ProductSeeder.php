@@ -722,7 +722,7 @@ It instantly delivers incredible shine, softness and adds color vibrancy to any 
             'price' => 300,
             'quantity' => 40,
             'brand' => "genaric ",
-            'image' => asset("/storage/imagesMedicalCare/SensodyneToothpaste.jpg"),
+            'image' => asset("/storage/imagesMedicalCare/WeighingScale.jpg"),
             'size' => "standard",
             'expires_at' => now(),
             'desc' => "weight measuring machine.
