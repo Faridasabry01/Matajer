@@ -155,7 +155,7 @@
 
                     <a href="{{ route('login') }}"> <button class="btn2" >login</button></a>
 
-                    <a href="{{ route("aboutus.view")}}"><button class="btn3" >About Us</button></a>
+
             </div>
 
             </div>

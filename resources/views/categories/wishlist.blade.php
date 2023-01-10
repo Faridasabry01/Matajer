@@ -78,17 +78,13 @@
 
                                                 </td>
                                                 <td class=" text-right md:table-cell">
-                                                    {{-- <form action="{{ $product->removeFavorite() }}" method="get"> --}}
-                                                    {{-- @csrf --}}
 
                                                     <a href="{{ route('favourite.product', $product->id) }}"
                                                         class="px-4 py-2  bg-red-600">x</a>
-                                                    {{-- </form> --}}
 
                                                 </td>
                                             </tr>
 
-                                            {{-- {{ Auth::user()->addFavorite($product) }} --}}
                                         @endforeach
 
                                     </tbody>

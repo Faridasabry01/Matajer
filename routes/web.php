@@ -51,7 +51,8 @@ Route::middleware('auth')->group(function () {
 
 
     // Route::get('/addToCartWL/{productid}', [HomeController::class, 'addToCartWL'])->name("client.WLcart");
-    Route::get('/aboutus', [HomeController::class, 'aboutus'])->name("aboutus.view");
+    // Route::get('/aboutus', [HomeController::class, 'aboutus'])->name("aboutus.view");
+    Route::get('/aboutUs', [HomeController::class, 'aboutUs'])->name("aboutus.view");
 
 
     Route::post('/payment', [PaymentController::class, 'payment'])->name("client.payment");

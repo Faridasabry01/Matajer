@@ -9,6 +9,8 @@ use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Category;
+use Illuminate\Support\Facades\Hash;
+
 
 
 
@@ -57,7 +59,7 @@ class PaymentController extends Controller
 
             $payment = Payment::create([
                 'payment_method' => "Visa",
-                'card_number' => $request->card_number,
+                'card_number' => Hash::make($request->card_number),
                 'expdate' => $request->exp,
                 'cvv' => $request->cvv,
                 'Cardholdername' => $request->card_holder_name,

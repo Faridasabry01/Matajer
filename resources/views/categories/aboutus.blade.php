@@ -2,6 +2,20 @@
 
 
 @section("content")
+
+<div class="bg-transparent shadow" style="height:2.5em">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center"
+        style="background-color: rgba(0, 0, 0, 0.822); height:100%">
+        @foreach ($categories as $category)
+            <span class="font-semibold text-xl text-gray-800 leading-tight px-2 ">
+                <a style="color:rgb(249, 75, 153);font-size:18px"
+                    href="{{ route('category.show', $category) }}">{{ $category->name }}</a>
+            </span>
+        @endforeach
+
+    </div>
+
+</div>
  <!---------about us------------------------------------------------------------------->
  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
     <div class="carousel-indicators">

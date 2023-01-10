@@ -4,9 +4,9 @@
 @section('content')
     <div style="margin: 30em;">
         <div class="signup__container">
-            <div class="container__child signup__thumbnail">
+            <div class="container__child signup__thumbnail" style="background-color:black;">
 
-                <div class="thumbnail__content text-center">
+                <div class="thumbnail__content text-center" style="color: rgb(249, 75, 153); ">
                     <h2 class="heading--primary">Welcome to MATAJER online store</h2>
                     <h3 class="heading--secondary">Are you ready to join the elite?</h3>
                 </div>

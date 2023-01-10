@@ -17,12 +17,19 @@ use Illuminate\Validation\ValidationException;
 
 class HomeController extends Controller
 {
-
-    public function aboutus()
+    public function aboutUs()
     {
         $categories = Category::all();
+
         return view("categories.aboutus",["categories" => $categories]);
+
     }
+
+    // public function aboutus()
+    // {
+    //     $categories = Category::all();
+    //     return view("categories.aboutus",["categories" => $categories]);
+    // }
     public function getHomePage()
     {
         $categories = Category::all();

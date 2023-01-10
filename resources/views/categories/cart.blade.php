@@ -43,7 +43,7 @@
                                 @else
                                     <div class=”Header”>
 
-                                        <h5 class=”Heading”>Shopping Cart </h5>
+                                        {{-- <h5 class=”Heading”>Shopping Cart </h5> --}}
                                         <p>Total Price: {{ $cart->total_price }} EGP</p>
                                         <p>Number of items: {{ $cart->num_of_items }}</p>
 
