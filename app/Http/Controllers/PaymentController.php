@@ -8,6 +8,8 @@ use App\Http\Requests\UpdatePaymentRequest;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Category;
+
 
 
 
@@ -20,11 +22,12 @@ class PaymentController extends Controller
      */
     public function orders()
     {
+        $categories = Category::all();
         $orders = Auth::user()->orders;
         //dd($orders);
 
 
-        return view("categories.order",["orders" => $orders]);
+        return view("categories.order",["orders" => $orders,"categories" => $categories]);
     }
 
     public function checkout()
@@ -46,9 +49,9 @@ class PaymentController extends Controller
 
         if ($request->payment_method == "Visa") {
             $request->validate([
-                "card_number" => ["required"],
-                "exp" => ["required"],
-                "cvv" => ["required"],
+                "card_number" => ["required", "regex:/^[(]{0,1}[0-9]{4}[)]{0,1}[-\s\.]{0,1}[0-9]{4}[-\s\.]{0,1}[0-9]{4}[-\s\.]{0,1}[0-9]{4}$/"],
+                "exp" => ["required","regex:/^[0-9]{2}-[0-9]{2}$/"],
+                "cvv" => ["required", "regex:/^[0-9]{3}$/"],
                 "card_holder_name" => ["required"],
             ]);
 
@@ -68,6 +71,18 @@ class PaymentController extends Controller
                 'total_price' => $cart->total_price,
                 'num_of_items' => $cart->num_of_items,
             ]);
+
+            $user=Auth::user();
+            $user->address=$request->street;
+            $user->city=$request->address;
+            $user->buildingNum=$request->building_no;
+            $user->save();
+
+             $cart->Product()->detach();
+            $cart->total_price = 0;
+             $cart->num_of_items =0;
+            $cart->save();
+
             return redirect(route("client.orders"));
 
         } else if ($request->payment_method == "cash") {
@@ -78,6 +93,16 @@ class PaymentController extends Controller
                 'total_price' => $cart->total_price,
                 'num_of_items' => $cart->num_of_items,
             ]);
+
+            $user=Auth::user();
+            $user->address=$request->street;
+            $user->city=$request->address;
+            $user->buildingNum=$request->building_no;
+            $user->save();
+            $cart->Product()->detach();
+            $cart->total_price = 0;
+             $cart->num_of_items =0;
+            $cart->save();
 
             return redirect(route("client.orders"));
 

@@ -5,10 +5,10 @@
 
 
 <div class="bg-transparent shadow" style="height:2.5em">
-    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center" style="background-color: rgba(99, 92, 99, 0.411); height:100%">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center" style="background-color: rgba(0, 0, 0, 0.822); height:100%">
        @foreach ($categories as $category )
        <span class="font-semibold text-xl text-gray-800 leading-tight px-2 ">
-        <a style="color:rgba(255, 255, 255, 0.849);font-size:18px" href="{{route("category.show",$category)}}"
+        <a style="color:rgb(249, 75, 153);font-size:18px" href="{{route("category.show",$category)}}"
         class="{{$category->id == $categoryy->id ? "btn btn-primary":"" }}"
 
         >{{ $category->name }}</a>

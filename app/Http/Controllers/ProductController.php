@@ -54,6 +54,10 @@ class ProductController extends Controller
      */
     public function review(Request $request)
     {
+        // $request->validate([
+        //     "body" => ["required", "string"],
+        //     "rating" => ["required"],
+        // ]);
         $user = Auth::user();
         $product = Product::find($request->product_id);
 
@@ -64,6 +68,7 @@ class ProductController extends Controller
         'approved' => true,
         ], $user);
 
+        return redirect(route("product.show",$request->product_id));
     }
 
     public function show(Product $product)

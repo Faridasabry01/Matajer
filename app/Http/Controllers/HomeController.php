@@ -35,6 +35,33 @@ class HomeController extends Controller
 
         return view("categories.cart", ["categories" => $categories, "cart" => $cart]);
     }
+    public function removefromcart($productid,$quantity)
+    {
+        $user=Auth::user();
+        $cart=$user->cart;
+        $product=Product::find($productid);
+
+        $cart->total_price = ($cart->total_price) - (($product->price) * $quantity);
+        $cart->num_of_items = ($cart->num_of_items) - $quantity;
+
+        $cart->Product()->detach($productid);
+        $cart->save();
+
+        return redirect(route("client.get.cart"));
+
+    }
+
+    public function removeallcart()
+    {
+        $user=Auth::user();
+        $cart=$user->cart;
+
+        $cart->Product()->detach();
+        $cart->total_price = 0;
+        $cart->num_of_items =0;
+        $cart->save();
+        return redirect(route("client.get.cart"));
+    }
 
     public function addToCart(Request $request)
     {

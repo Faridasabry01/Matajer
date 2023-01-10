@@ -4,10 +4,10 @@
 @section('content')
     <div class="bg-transparent shadow" style="height:2.5em">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center"
-            style="background-color: rgba(99, 92, 99, 0.411); height:100%">
+            style="background-color: rgba(0, 0, 0, 0.822); height:100%">
             @foreach ($categories as $category)
                 <span class="font-semibold text-xl text-gray-800 leading-tight px-2 ">
-                    <a style="color:rgba(255, 255, 255, 0.849);font-size:18px"
+                    <a style="color:rgb(249, 75, 153);font-size:18px"
                         href="{{ route('category.show', $category) }}">{{ $category->name }}</a>
                 </span>
             @endforeach
@@ -33,7 +33,7 @@
                                 <h3><strong>Your Wishlist is Empty</strong></h3>
                                 <h4>Looks like you have not added anything to your Wishlist. Go ahead and explore top
                                     Categories.</h4>
-                                <a href="Matajer.html" class="btn btn-primary cart-btn-transform m-3"
+                                <a href="{{route("dashboard")}}" class="btn btn-primary cart-btn-transform m-3"
                                     data-abc="true">continue
                                     shopping</a>
 

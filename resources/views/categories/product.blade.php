@@ -4,10 +4,10 @@
 @section('content')
     <div class="bg-transparent shadow" style="height:2.5em">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center"
-            style="background-color: rgba(99, 92, 99, 0.411); height:100%">
+            style="background-color: rgba(0, 0, 0, 0.822); height:100%">
             @foreach ($categories as $category)
                 <span class="font-semibold text-xl text-gray-800 leading-tight px-2 ">
-                    <a style="color:rgba(255, 255, 255, 0.849);font-size:18px" href="{{ route('category.show', $category) }}"
+                    <a style="color:rgb(249, 75, 153);font-size:18px" href="{{ route('category.show', $category) }}"
                         class="{{ $category->id == $product->category_id ? 'btn btn-primary' : '' }}">{{ $category->name }}</a>
                 </span>
             @endforeach
@@ -56,7 +56,7 @@ quantity: <input name="quantity" min="1" type="number" value="1" id="quantity" s
             @else
             <p style="font-size: 20px">Reviews</p>
             @foreach ($ratings = $product->getAllRatings($product->id) as $rate)
-            <div class=”Header” style=" border:1px;border-style:solid; border-color:black; padding-right:1em;padding-left:1em;">
+            <div class=”Header” style=" border:1px;border-style:solid; border-color:black; padding-right:1em;padding-left:1em; width:22em;height: auto; word-wrap: break-word;">
             <p>User name:{{$rate->author_id}} &nbsp;
                  @if($rate->rating ==5)
                     rate: Perfect
@@ -69,7 +69,7 @@ quantity: <input name="quantity" min="1" type="number" value="1" id="quantity" s
                 @elseif($rate->rating==1)
                      rate: Very Poor
                  @endif
-                 <br>{{$rate->body}}<br></p>
+                 <br><p class="text-wrap">{{$rate->body}}</p><br></p>
 
             </div>
                 <hr>

@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        {{-- <title>Laravel</title> --}}
         <link rel="stylesheet" href={{ asset('/css/stylesheet.css')}}>
+        <link rel="icon" href="{{asset('/storage/LOGO/LOGO.png')}}">
+         <title>MATAJER</title>
 
 
         <!-- Fonts -->
@@ -21,13 +23,13 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style> --}}
-        
-            
+
+
     </head>
     <body class="antialiased landingg">
 
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
+            {{-- @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
@@ -39,7 +41,7 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif --}}
 
             {{-- <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
@@ -149,20 +151,11 @@
                 <p>Discover Products for a life well lived.<br>
                     So let's get started to have the most unique, <br>
                     easy, fun online shopping experience.</p>
-                    <form action="{{route('register')}}">
-                        <input class="btn1" type="submit" value="Get started"/>
+                    <a href="{{route('register')}}"><button class="btn1" >Get started</button></a>
 
-                    </form>
-                    <form action="{{ route('aboutus.show') }}" >
-                         <input class="btn2" type="submit" value="About Us"/>
+                    <a href="{{ route('login') }}"> <button class="btn2" >login</button></a>
 
-                    </form>
-                    <form action="" >
-                        <input class="btn3" type="submit" value="login"/>
-
-                   </form>
-
-
+                    <a href="{{ route("aboutus.view")}}"><button class="btn3" >About Us</button></a>
             </div>
 
             </div>

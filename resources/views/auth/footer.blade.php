@@ -9,7 +9,7 @@
 
         <!-- Section: Links  -->
         <section class="">
-          <div class="container text-center text-md-start mt-5">
+          <div class="text-center text-md-start mt-5">
             <!-- Grid row -->
             <div class="row mt-3">
               <!-- Grid column -->
@@ -48,6 +48,8 @@
               <!-- Grid column -->
 
               <!-- Grid column -->
+              @auth
+
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="thirdcoulmnfooter">
@@ -61,10 +63,11 @@
                   <a href="{{route("client.orders")}}" class="text-reset">Orders</a>
                 </p>
                 <p class="thirdcoulmnfooterpara">
-                   <a href="{{route("aboutus.show")}}" class="text-reset">About Us</a>
+                   <a href="{{route("aboutus.view")}}" class="text-reset">About Us</a>
                 </p>
 
               </div>
+              @endauth
               <!-- Grid column -->
 
               <!-- Grid column -->
@@ -94,7 +97,7 @@
 
         </section>
         <!-- Section: Links  -->
-        <div class="colll-md-5 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  ">
+        <div class="colll-md-5 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  " style="height: 5em;">
           <h4 class="f3">Follow Us</h4>
               <ul class="social-network social-circle">
                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook" ></i></a></li>

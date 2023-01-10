@@ -50,8 +50,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/checkout', [PaymentController::class, 'checkout'])->name('client.checkout');
 
 
-    Route::get('/addToCartWL/{productid}', [HomeController::class, 'addToCartWL'])->name("client.WLcart");
-    Route::get('/aboutus', [HomeController::class, 'aboutus'])->name("aboutus.show");
+    // Route::get('/addToCartWL/{productid}', [HomeController::class, 'addToCartWL'])->name("client.WLcart");
+    Route::get('/aboutus', [HomeController::class, 'aboutus'])->name("aboutus.view");
 
 
     Route::post('/payment', [PaymentController::class, 'payment'])->name("client.payment");
@@ -59,6 +59,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/orders', [PaymentController::class, 'orders'])->name("client.orders");
 
     Route::post('/review', [ProductController::class, 'review'])->name("client.review");
+    Route::get('/removefromcart/{productid}/{quantity}', [HomeController::class, 'removefromcart'])->name("cart.removefromcart");
+    Route::get('/removeallcart', [HomeController::class, 'removeallcart'])->name("cart.removeallcart");
 
 
 });

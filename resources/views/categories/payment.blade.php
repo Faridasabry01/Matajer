@@ -82,7 +82,6 @@
                             <table>
                                 <tr>
                                     <td>Subtotal</td>
-                                    <input type="text" value="{{ $cart->total_price }}" name="" id="">
                                     <td align="right"> {{ $cart->total_price }} EGP</td>
                                 </tr>
                                 <tr>
