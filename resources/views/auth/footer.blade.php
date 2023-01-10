@@ -84,12 +84,6 @@
               </div>
               <!-- Grid column -->
 
-
-
-
-
-
-
             </div>
             <!-- Grid row -->
           </div>
@@ -97,6 +91,7 @@
 
         </section>
         <!-- Section: Links  -->
+
         <div class="colll-md-5 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  " style="height: 5em;">
           <h4 class="f3">Follow Us</h4>
               <ul class="social-network social-circle">
@@ -106,9 +101,9 @@
               </ul>
               <div class="coll-md-12 copy">
                 <p class="f4">&copy; Copyright 2022 -Matajer.All rights reserved.</p>
-              </div>
+        </div>
 
-      </div>
+      </section>
 
     </footer>
       <!----------------------------------------------------------------------------------------------->
