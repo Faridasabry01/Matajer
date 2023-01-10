@@ -2,11 +2,9 @@
     <!-- Container wrapper -->
     <div class="container-fluid topnav" style="height:100%; background-color: rgba(0, 0, 0, 0.877)">
         <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample"
-            aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample" style="color: white;">
             @guest
@@ -62,21 +60,82 @@
                                 {{ $quantity }}
                             </span>
                         </a>
-                        {{-- <a href="{{ route('client.get.cart') }}" class="btn btn-dark">
-                            Profile <span class="badge badge-danger">9</span>
-                            <span class="sr-only">unread messages</span>
-                        </a> --}}
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('client.wishlist') }}"><i
                                 class="fa fa-heart" style="font-size:28px; color:rgb(255, 0, 85);"></i> </a>
                     </li>
-                </ul>
+            </ul>
+        </div>
+
+
+                    {{-- <div class="d-flex justify-content-end " > --}}
+
+                           {{-- <li class="nav-item dropdown" style="height: 4em"> --}}
+                        {{-- <div class="nav-item dropdown">
+
+
+                            <a class="nav-link dropdown-toggle inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                            {{ Auth::user()->name }}
+                        </a>
+
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a></li>
+                                <li>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                    this.closest('form').submit();">
+                                            {{ __('Log Out') }}
+                                        </a>
+                                    </form>
+                                </li>
+                            </ul> --}}
+                        {{-- </li> --}}
+                    {{-- </div>
+                    </div> --}}
+          @endauth
+          {{-- ================================== --}}
 
 
 
+        @auth
+            <div class="d-flex">
 
-                <!-- Settings Dropdown -->
+                <div style="color:black">
+                    <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150"
+                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ Auth::user()->name }}
+                    </a>
+
+
+                        <ul class="dropdown-menu col-xs-2" style="width:2em !important;" >
+                            <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a></li>
+                            <li>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                        {{ __('Log Out') }}
+                                    </a>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        @endauth
+
+
+
+       <!-- Settings Dropdown -->
                 {{-- <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
@@ -119,45 +178,6 @@
                     </svg>
                 </button>
             </div> --}}
-
-            @endauth
-            <!-- Left links -->
-        </div>
-        <!-- Right elements -->
-        @auth
-
-
-            <div class="d-flex align-items-center">
-
-                <div style="color:black">
-
-                    <a class="nav-link dropdown-toggle inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150"
-                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        {{ Auth::user()->name }}
-                    </a>
-
-                    <div class="sm:flex sm:items-center sm:ml-6">
-                        <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a></li>
-                            <li>
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                        {{ __('Log Out') }}
-                                    </a>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        @endauth
-
-
-    </div>
     <!-- Collapsible wrapper -->
     {{-- </div> --}}
     <!-- Container wrapper -->
